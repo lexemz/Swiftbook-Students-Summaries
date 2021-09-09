@@ -59,7 +59,7 @@
         <!--Nadia Root Profile-->
         <scene sceneID="ymJ-KW-9Nc">
             <objects>
-                <viewController id="pUc-Yo-Zoo" userLabel="Nadia Root Profile" sceneMemberID="viewController">
+                <viewController id="pUc-Yo-Zoo" userLabel="Nadia Root Profile" customClass="NadiaProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0oj-I3-xER">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

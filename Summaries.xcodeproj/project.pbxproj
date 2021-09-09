@@ -16,6 +16,7 @@
 		789DBF4C26EAAAB4005F86D8 /* IgorProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */; };
 		789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */; };
 		789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */; };
+		789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgorProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmitryProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexProfileRootViewController.swift; sourceTree = "<group>"; };
+		789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaProfileRootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */,
 				789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */,
 				789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */,
+				789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */,
 				789DBF4A26EAA909005F86D8 /* TabBarController.swift in Sources */,
 				789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */,
+				789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */,
 				789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */,
 				789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */,
 				789DBF4C26EAAAB4005F86D8 /* IgorProfileRootViewController.swift in Sources */,
