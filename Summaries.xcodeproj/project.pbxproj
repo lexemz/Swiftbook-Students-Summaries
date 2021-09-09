@@ -95,10 +95,10 @@
 			isa = PBXGroup;
 			children = (
 				789DBF4926EAA909005F86D8 /* TabBarController.swift */,
+				789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */,
 				789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */,
 				789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */,
 				789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */,
-				789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

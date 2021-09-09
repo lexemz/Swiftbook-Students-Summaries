@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tlD-0b-h9d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJX-Cu-Ciu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -18,11 +18,11 @@
                         <viewLayoutGuide key="safeArea" id="b7I-wG-vrD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="asW-XM-II3"/>
+                    <tabBarItem key="tabBarItem" title="Igor" image="person" catalog="system" selectedImage="person.fill" id="asW-XM-II3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2d-Li-hhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2200" y="228"/>
+            <point key="canvasLocation" x="-1329" y="240"/>
         </scene>
         <!--Dmitry Root Profile-->
         <scene sceneID="JYq-0k-FAa">
@@ -34,11 +34,11 @@
                         <viewLayoutGuide key="safeArea" id="g4E-eU-iWP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ard-J5-Zq6"/>
+                    <tabBarItem key="tabBarItem" title="Dmitry" image="person" catalog="system" selectedImage="person.fill" id="ard-J5-Zq6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOu-fC-P84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1338" y="228"/>
+            <point key="canvasLocation" x="-468" y="240"/>
         </scene>
         <!--Alex Root Profile-->
         <scene sceneID="0dH-Df-2SF">
@@ -50,11 +50,11 @@
                         <viewLayoutGuide key="safeArea" id="zfC-qL-w0h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="oJo-AL-3O3"/>
+                    <tabBarItem key="tabBarItem" title="Alex" image="person" catalog="system" selectedImage="person.fill" id="oJo-AL-3O3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PIt-8z-DAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-487" y="228"/>
+            <point key="canvasLocation" x="383" y="240"/>
         </scene>
         <!--Nadia Root Profile-->
         <scene sceneID="ymJ-KW-9Nc">
@@ -66,16 +66,33 @@
                         <viewLayoutGuide key="safeArea" id="xtn-O9-H0g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="dSq-ow-0RP"/>
+                    <tabBarItem key="tabBarItem" title="Nadia" image="person" catalog="system" selectedImage="person.fill" id="dSq-ow-0RP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7a-fa-HaT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="303" y="228"/>
+            <point key="canvasLocation" x="-2158" y="240"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="epY-e3-mr7">
+            <objects>
+                <navigationController id="qJX-Cu-Ciu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ssR-Ce-fwV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tlD-0b-h9d" kind="relationship" relationship="rootViewController" id="om7-9f-Mek"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZB-Ac-bNk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1713" y="-603"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Kh2-Oo-YNL">
             <objects>
                 <tabBarController id="tlD-0b-h9d" customClass="TabBarController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Vd5-kb-gai"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J4l-dc-TfS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -94,6 +111,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
