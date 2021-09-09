@@ -56,15 +56,39 @@
 		789DBF3126EAA4C3005F86D8 /* Summaries */ = {
 			isa = PBXGroup;
 			children = (
-				789DBF3226EAA4C3005F86D8 /* AppDelegate.swift */,
-				789DBF3426EAA4C3005F86D8 /* SceneDelegate.swift */,
-				789DBF3626EAA4C3005F86D8 /* ViewController.swift */,
-				789DBF3826EAA4C3005F86D8 /* Main.storyboard */,
+				789DBF4726EAA600005F86D8 /* App */,
+				789DBF4826EAA721005F86D8 /* ViewControllers */,
+				789DBF4626EAA5E8005F86D8 /* Storyboards */,
 				789DBF3B26EAA4C7005F86D8 /* Assets.xcassets */,
-				789DBF3D26EAA4C7005F86D8 /* LaunchScreen.storyboard */,
-				789DBF4026EAA4C7005F86D8 /* Info.plist */,
 			);
 			path = Summaries;
+			sourceTree = "<group>";
+		};
+		789DBF4626EAA5E8005F86D8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				789DBF3826EAA4C3005F86D8 /* Main.storyboard */,
+				789DBF3D26EAA4C7005F86D8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		789DBF4726EAA600005F86D8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				789DBF3226EAA4C3005F86D8 /* AppDelegate.swift */,
+				789DBF3426EAA4C3005F86D8 /* SceneDelegate.swift */,
+				789DBF4026EAA4C7005F86D8 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		789DBF4826EAA721005F86D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				789DBF3626EAA4C3005F86D8 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,14 +310,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Summaries/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Summaries/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "swiftbook-students.Summaries";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -304,14 +331,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Summaries/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Summaries/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "swiftbook-students.Summaries";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
