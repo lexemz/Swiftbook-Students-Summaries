@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJX-Cu-Ciu">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="JGT-gj-NFc" userLabel="Igor Root Profile" customClass="IgorProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ADt-b2-JXO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="b7I-wG-vrD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -29,7 +29,7 @@
             <objects>
                 <viewController id="fCK-Yx-iFf" userLabel="Dmitry Root Profile" customClass="DmitryProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F6Z-m8-bKH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="g4E-eU-iWP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -45,7 +45,7 @@
             <objects>
                 <viewController id="eBc-cx-s6Z" userLabel="Alex Root Profile" customClass="AlexProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ObO-MN-dTD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="zfC-qL-w0h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -61,23 +61,73 @@
             <objects>
                 <viewController id="pUc-Yo-Zoo" userLabel="Nadia Root Profile" customClass="NadiaProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0oj-I3-xER">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KZ3-YM-JXa">
+                                <rect key="frame" x="92.5" y="76" width="135" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KZ3-YM-JXa" secondAttribute="height" multiplier="1:1" id="en1-W2-GnD"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NuI-vB-Arj">
+                                <rect key="frame" x="16" y="227" width="288" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmA-b4-a5A">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="22"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="yZq-sa-kXc">
+                                        <rect key="frame" x="0.0" y="38" width="288" height="20"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNB-zq-Bia">
+                                <rect key="frame" x="92.5" y="317" width="135" height="32"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                <state key="normal" title="More Info">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xtn-O9-H0g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NuI-vB-Arj" firstAttribute="top" secondItem="KZ3-YM-JXa" secondAttribute="bottom" constant="16" id="1pn-js-huD"/>
+                            <constraint firstItem="KNB-zq-Bia" firstAttribute="top" secondItem="NuI-vB-Arj" secondAttribute="bottom" constant="32" id="EDJ-nW-1j2"/>
+                            <constraint firstItem="KZ3-YM-JXa" firstAttribute="centerX" secondItem="0oj-I3-xER" secondAttribute="centerX" id="JZP-VE-1wh"/>
+                            <constraint firstItem="KZ3-YM-JXa" firstAttribute="height" secondItem="0oj-I3-xER" secondAttribute="height" multiplier="0.28125" id="Ldr-EN-63J"/>
+                            <constraint firstItem="xtn-O9-H0g" firstAttribute="trailing" secondItem="NuI-vB-Arj" secondAttribute="trailing" constant="16" id="NBV-eW-Xla"/>
+                            <constraint firstItem="KNB-zq-Bia" firstAttribute="centerX" secondItem="0oj-I3-xER" secondAttribute="centerX" id="Ri5-sh-eCi"/>
+                            <constraint firstItem="KNB-zq-Bia" firstAttribute="width" secondItem="KZ3-YM-JXa" secondAttribute="width" id="cWS-xO-MzM"/>
+                            <constraint firstItem="KZ3-YM-JXa" firstAttribute="top" secondItem="xtn-O9-H0g" secondAttribute="top" constant="32" id="hJA-6c-7SN"/>
+                            <constraint firstItem="NuI-vB-Arj" firstAttribute="leading" secondItem="xtn-O9-H0g" secondAttribute="leading" constant="16" id="uep-TH-eD2"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Nadia" image="person" catalog="system" selectedImage="person.fill" id="dSq-ow-0RP"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="yZq-sa-kXc" id="THQ-jf-uC9"/>
+                        <outlet property="moreInfoButton" destination="KNB-zq-Bia" id="YEY-Ie-oBv"/>
+                        <outlet property="photoImageView" destination="KZ3-YM-JXa" id="zuY-Bo-aHW"/>
+                        <outlet property="titleLabel" destination="FmA-b4-a5A" id="Uiz-Oj-wRD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7a-fa-HaT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2158" y="240"/>
+            <point key="canvasLocation" x="-2158.125" y="240"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="epY-e3-mr7">
             <objects>
                 <navigationController id="qJX-Cu-Ciu" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ssR-Ce-fwV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
