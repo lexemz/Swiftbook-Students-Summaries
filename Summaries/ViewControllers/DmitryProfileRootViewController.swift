@@ -8,7 +8,14 @@
 import UIKit
 
 class DmitryProfileRootViewController: UIViewController {
+    
+    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var fullNameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var moreInfoButton: UIButton!
+    
 
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +33,9 @@ class DmitryProfileRootViewController: UIViewController {
     }
     */
 
+}
+
+// MARK: - Private method
+extension DmitryProfileRootViewController {
+    
 }
