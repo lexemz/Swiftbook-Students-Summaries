@@ -37,5 +37,10 @@ class DmitryProfileRootViewController: UIViewController {
 
 // MARK: - Private method
 extension DmitryProfileRootViewController {
-    
+    private func setupPhotoImageView() {
+        // TODO: Загрузить своё фото и добавить сюда имя файла
+        photoImageView.image = UIImage(named: "")
+        photoImageView.layer.cornerRadius = photoImageView.frame.height / 2
+        photoImageView.clipsToBounds = true
+    }
 }
