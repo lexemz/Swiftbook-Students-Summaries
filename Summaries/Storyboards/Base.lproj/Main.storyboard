@@ -75,6 +75,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dmitry" image="person" catalog="system" selectedImage="person.fill" id="ard-J5-Zq6"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="vr7-7s-hk7" id="wlQ-3g-114"/>
+                        <outlet property="fullNameLabel" destination="dpj-X0-tuC" id="ghx-de-KbN"/>
+                        <outlet property="moreInfoButton" destination="tfN-Bo-oLA" id="jfg-iD-Mwp"/>
+                        <outlet property="photoImageView" destination="CKr-3c-slj" id="dxy-Av-yv5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOu-fC-P84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
