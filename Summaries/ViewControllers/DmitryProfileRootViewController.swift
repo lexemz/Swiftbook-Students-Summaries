@@ -19,7 +19,10 @@ class DmitryProfileRootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Defaults setup
+        setupPhotoImageView()
+        setupLabels()
+        setupMoreInfoButton()
     }
     
 
@@ -39,7 +42,9 @@ class DmitryProfileRootViewController: UIViewController {
 extension DmitryProfileRootViewController {
     private func setupPhotoImageView() {
         // TODO: Загрузить своё фото и добавить сюда имя файла
-        photoImageView.image = UIImage(named: "")
+//        photoImageView.image = UIImage(named: "")
+        // TODO: удалить после добавления фотографии
+        photoImageView.backgroundColor = .systemGray2
         photoImageView.layer.cornerRadius = photoImageView.frame.height / 2
         photoImageView.clipsToBounds = true
     }
@@ -52,6 +57,6 @@ extension DmitryProfileRootViewController {
     }
     
     private func setupMoreInfoButton() {
-        moreInfoButton.layer.cornerRadius = 15
+        moreInfoButton.layer.cornerRadius = 10
     }
 }
