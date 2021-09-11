@@ -43,4 +43,11 @@ extension DmitryProfileRootViewController {
         photoImageView.layer.cornerRadius = photoImageView.frame.height / 2
         photoImageView.clipsToBounds = true
     }
+    
+    // TODO: Стоит добавить модель данных и брать данные из модели
+    private func setupLabels() {
+        fullNameLabel.text = "Дмитрий Данилин"
+        // TODO: Сделать под профессию отдельный лейбл а описание переименовать в ключевые навыки.
+        descriptionLabel.text = "Junior iOS Develop. Xcode, Swift, UIKit, CoreData, Realm, MVC, GIT, Работа в команде. Уровень английского - А2."
+    }
 }
