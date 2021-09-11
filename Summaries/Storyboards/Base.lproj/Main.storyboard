@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJX-Cu-Ciu">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="JGT-gj-NFc" userLabel="Igor Root Profile" customClass="IgorProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ADt-b2-JXO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="b7I-wG-vrD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -29,10 +29,50 @@
             <objects>
                 <viewController id="fCK-Yx-iFf" userLabel="Dmitry Root Profile" customClass="DmitryProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F6Z-m8-bKH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CKr-3c-slj">
+                                <rect key="frame" x="60" y="64" width="200" height="200"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fPF-he-KyT">
+                                <rect key="frame" x="20" y="280" width="280" height="60.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpj-X0-tuC">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr7-7s-hk7">
+                                        <rect key="frame" x="0.0" y="40" width="280" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfN-Bo-oLA">
+                                <rect key="frame" x="90" y="449" width="140" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="pZs-RX-AFO"/>
+                                </constraints>
+                                <state key="normal" title="More Info"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="g4E-eU-iWP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tfN-Bo-oLA" firstAttribute="centerX" secondItem="F6Z-m8-bKH" secondAttribute="centerX" id="9CL-R6-DaX"/>
+                            <constraint firstItem="fPF-he-KyT" firstAttribute="top" secondItem="CKr-3c-slj" secondAttribute="bottom" constant="16" id="K06-hs-Zh3"/>
+                            <constraint firstItem="g4E-eU-iWP" firstAttribute="bottom" secondItem="tfN-Bo-oLA" secondAttribute="bottom" constant="40" id="LA9-4m-xMC"/>
+                            <constraint firstItem="CKr-3c-slj" firstAttribute="height" secondItem="F6Z-m8-bKH" secondAttribute="height" multiplier="0.352113" id="NLe-oX-H9c"/>
+                            <constraint firstItem="CKr-3c-slj" firstAttribute="top" secondItem="g4E-eU-iWP" secondAttribute="top" constant="20" id="Quc-Yt-6rB"/>
+                            <constraint firstItem="fPF-he-KyT" firstAttribute="leading" secondItem="g4E-eU-iWP" secondAttribute="leading" constant="20" id="YeX-og-jVX"/>
+                            <constraint firstItem="g4E-eU-iWP" firstAttribute="trailing" secondItem="fPF-he-KyT" secondAttribute="trailing" constant="20" id="tLp-h5-Ay2"/>
+                            <constraint firstItem="CKr-3c-slj" firstAttribute="width" secondItem="CKr-3c-slj" secondAttribute="height" multiplier="1:1" id="uEg-l0-a89"/>
+                            <constraint firstItem="CKr-3c-slj" firstAttribute="centerX" secondItem="F6Z-m8-bKH" secondAttribute="centerX" id="yU1-xp-u9H"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dmitry" image="person" catalog="system" selectedImage="person.fill" id="ard-J5-Zq6"/>
                 </viewController>
@@ -45,7 +85,7 @@
             <objects>
                 <viewController id="eBc-cx-s6Z" userLabel="Alex Root Profile" customClass="AlexProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ObO-MN-dTD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="zfC-qL-w0h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -61,7 +101,7 @@
             <objects>
                 <viewController id="pUc-Yo-Zoo" userLabel="Nadia Root Profile" customClass="NadiaProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0oj-I3-xER">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="xtn-O9-H0g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -77,7 +117,7 @@
             <objects>
                 <navigationController id="qJX-Cu-Ciu" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ssR-Ce-fwV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
