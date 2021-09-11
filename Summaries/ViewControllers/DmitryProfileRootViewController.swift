@@ -50,4 +50,8 @@ extension DmitryProfileRootViewController {
         // TODO: Сделать под профессию отдельный лейбл а описание переименовать в ключевые навыки.
         descriptionLabel.text = "Junior iOS Develop. Xcode, Swift, UIKit, CoreData, Realm, MVC, GIT, Работа в команде. Уровень английского - А2."
     }
+    
+    private func setupMoreInfoButton() {
+        moreInfoButton.layer.cornerRadius = 15
+    }
 }
