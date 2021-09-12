@@ -17,6 +17,8 @@
 		789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */; };
 		789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */; };
 		789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */; };
+		FD7E974926EC90B900751A18 /* NadiaMainResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E974826EC90B900751A18 /* NadiaMainResumeViewController.swift */; };
+		FD7E974B26ECA5D700751A18 /* PersonN.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E974A26ECA5D700751A18 /* PersonN.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmitryProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaProfileRootViewController.swift; sourceTree = "<group>"; };
+		FD7E974826EC90B900751A18 /* NadiaMainResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaMainResumeViewController.swift; sourceTree = "<group>"; };
+		FD7E974A26ECA5D700751A18 /* PersonN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonN.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				789DBF4826EAA721005F86D8 /* ViewControllers */,
 				789DBF4626EAA5E8005F86D8 /* Storyboards */,
 				789DBF3B26EAA4C7005F86D8 /* Assets.xcassets */,
+				FD7E974A26ECA5D700751A18 /* PersonN.swift */,
 			);
 			path = Summaries;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 			children = (
 				789DBF4926EAA909005F86D8 /* TabBarController.swift */,
 				789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */,
+				FD7E974826EC90B900751A18 /* NadiaMainResumeViewController.swift */,
 				789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */,
 				789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */,
 				789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */,
@@ -173,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7E974926EC90B900751A18 /* NadiaMainResumeViewController.swift in Sources */,
 				789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */,
 				789DBF4A26EAA909005F86D8 /* TabBarController.swift in Sources */,
+				FD7E974B26ECA5D700751A18 /* PersonN.swift in Sources */,
 				789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */,
 				789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */,
 				789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */,

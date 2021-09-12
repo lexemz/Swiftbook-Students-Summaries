@@ -14,6 +14,9 @@ class NadiaProfileRootViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var moreInfoButton: UIButton!
     
+    // MARK: - Private Properties
+    let person = PersonN.nadia
+    
     // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +28,14 @@ class NadiaProfileRootViewController: UIViewController {
     
      // MARK: - Navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // TODO: - create next static table vc
+        guard let resumeVC = segue.destination as? NadiaMainResumeViewController else { return }
+        resumeVC.person = person
      }
     
     // MARK: - Private methods
     private func setUpLabels() {
-        titleLabel.text = "Junior iOS Developer"
-        descriptionLabel.text = "Good communication skills, ability to handle stress, a great desire to learn new technologies and improve the existing knowledge."
+        titleLabel.text = person.expectedPosition
+        descriptionLabel.text = person.summary
     }
     
     private func setUpButton() {
@@ -40,7 +44,7 @@ class NadiaProfileRootViewController: UIViewController {
     
     private func setUpImage() {
         photoImageView.layer.cornerRadius = 15
-        photoImageView.image = UIImage(named: "NadiaPhoto")
+        photoImageView.image = UIImage(named: person.photoLink ?? "person.fill")
         photoImageView.layer.borderWidth = 5
         photoImageView.layer.borderColor = UIColor.darkGray.cgColor
     }
