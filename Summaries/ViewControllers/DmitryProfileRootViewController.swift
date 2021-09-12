@@ -41,10 +41,7 @@ class DmitryProfileRootViewController: UIViewController {
 // MARK: - Private method
 extension DmitryProfileRootViewController {
     private func setupPhotoImageView() {
-        // TODO: Загрузить своё фото и добавить сюда имя файла
-//        photoImageView.image = UIImage(named: "")
-        // TODO: удалить после добавления фотографии
-        photoImageView.backgroundColor = .systemGray2
+        photoImageView.image = UIImage(named: "dmitriyPhoto")
         photoImageView.layer.cornerRadius = photoImageView.frame.height / 2
         photoImageView.clipsToBounds = true
     }
@@ -53,7 +50,7 @@ extension DmitryProfileRootViewController {
     private func setupLabels() {
         fullNameLabel.text = "Дмитрий Данилин"
         // TODO: Сделать под профессию отдельный лейбл а описание переименовать в ключевые навыки.
-        descriptionLabel.text = "Junior iOS Develop. Xcode, Swift, UIKit, CoreData, Realm, MVC, GIT, Работа в команде. Уровень английского - А2."
+        descriptionLabel.text = "Trainee iOS Develop. Xcode, Swift, UIKit, CoreData, Realm, MVC, GIT, Работа в команде. Уровень английского - А2."
     }
     
     private func setupMoreInfoButton() {
