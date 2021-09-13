@@ -17,7 +17,10 @@ struct Person {
     }
     
     static func getPerson() -> Person {
-        Person(name: "Дмитрий", surname: "Данилин", photo: Photo.dmitriy, profession: Profession.getProfession())
+        Person(name: "Дмитрий",
+               surname: "Данилин",
+               photo: Photo.dmitriy,
+               profession: Profession.getProfession())
     }
 }
 
