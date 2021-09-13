@@ -11,7 +11,8 @@ class DmitryProfileRootViewController: UIViewController {
     
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var fullNameLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var professionLabel: UILabel!
+    @IBOutlet weak var skillsLabel: UILabel!
     @IBOutlet weak var moreInfoButton: UIButton!
     
 
@@ -50,7 +51,8 @@ extension DmitryProfileRootViewController {
     private func setupLabels() {
         fullNameLabel.text = "Дмитрий Данилин"
         // TODO: Сделать под профессию отдельный лейбл а описание переименовать в ключевые навыки.
-        descriptionLabel.text = "Trainee iOS Develop. Xcode, Swift, UIKit, CoreData, Realm, MVC, GIT, Работа в команде. Уровень английского - А2."
+        professionLabel.text = "Trainee iOS Develop"
+        skillsLabel.text = "Xcode, Swift, UIKit, CoreData, Realm, MVC, GIT, Работа в команде. Уровень английского - А2."
     }
     
     private func setupMoreInfoButton() {
