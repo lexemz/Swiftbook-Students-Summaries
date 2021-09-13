@@ -11,6 +11,8 @@ class NadiaMainResumeViewController: UITableViewController {
     
     var person: PersonN!
     
+    private var selectedDetailedInfo: DetailedInfoN? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = person.fullname
@@ -151,6 +153,18 @@ class NadiaMainResumeViewController: UITableViewController {
         header.backgroundConfiguration = backgroundConfig
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 0, 2, 6: return
+        case 1: selectedDetailedInfo = .work
+        case 3: selectedDetailedInfo = .education
+        case 4: selectedDetailedInfo = .certificate
+        case 5: selectedDetailedInfo = .project
+        default: return
+        }
+        performSegue(withIdentifier: "detailedInfoN", sender: (person, selectedDetailedInfo))
+    }
+    
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -185,15 +199,14 @@ class NadiaMainResumeViewController: UITableViewController {
      return true
      }
      */
-    
-    /*
-     // MARK: - Navigation
+         // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
+        guard let detailedVC = segue.destination as? NadiaDetailedInfoViewController else { return }
+        detailedVC.person = person
+        detailedVC.typeInfo = selectedDetailedInfo
      }
-     */
+   
     
 }
