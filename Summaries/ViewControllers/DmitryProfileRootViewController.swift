@@ -15,6 +15,8 @@ class DmitryProfileRootViewController: UIViewController {
     @IBOutlet weak var skillsLabel: UILabel!
     @IBOutlet weak var moreInfoButton: UIButton!
     
+    private let person = Person.getPerson()
+    
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -47,12 +49,10 @@ extension DmitryProfileRootViewController {
         photoImageView.clipsToBounds = true
     }
     
-    // TODO: Стоит добавить модель данных и брать данные из модели
     private func setupLabels() {
-        fullNameLabel.text = "Дмитрий Данилин"
-        // TODO: Сделать под профессию отдельный лейбл а описание переименовать в ключевые навыки.
-        professionLabel.text = "Trainee iOS Develop"
-        skillsLabel.text = "Xcode, Swift, UIKit, CoreData, Realm, MVC, GIT, Работа в команде. Уровень английского - А2."
+        fullNameLabel.text = person.fullName
+        professionLabel.text = person.profession.professionName
+        skillsLabel.text = person.profession.skills.joined(separator: ", ")
     }
     
     private func setupMoreInfoButton() {
