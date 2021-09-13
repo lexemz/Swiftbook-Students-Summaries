@@ -43,7 +43,7 @@ class DmitryProfileRootViewController: UIViewController {
 
 }
 
-// MARK: - Default method setup
+// MARK: - Default setup methods
 extension DmitryProfileRootViewController {
     private func setupPhotoImageView() {
         photoImageView.image = UIImage(named: person.photo.rawValue)
