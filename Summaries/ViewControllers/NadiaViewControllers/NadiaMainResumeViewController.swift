@@ -42,7 +42,7 @@ class NadiaMainResumeViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mainNadiaResumeCell", for: indexPath)
-        
+
         var content = cell.defaultContentConfiguration()
         switch indexPath.section {
         case 0:
@@ -74,9 +74,11 @@ class NadiaMainResumeViewController: UITableViewController {
             cell.accessoryType = .none
         case 1:
             guard let work = person.workPlaces?[indexPath.row] else { break }
-            content.text = "\(work.company), \(work.dateOfStart) - \(work.dateOfFinishing) "
+            content.text = "\(work.company)"
+            content.textProperties.alignment = .justified
             content.secondaryText = "\(work.position)"
             cell.accessoryType = .disclosureIndicator
+    
         case 2:
             let skills = person.skills.joined(separator: ", ")
             content.text = skills
@@ -147,7 +149,7 @@ class NadiaMainResumeViewController: UITableViewController {
         }
         contentConfig.textProperties.color = UIColor.white
         header.contentConfiguration = contentConfig
-        
+
         var backgroundConfig = UIBackgroundConfiguration.listPlainHeaderFooter()
         backgroundConfig.backgroundColor = .darkGray
         header.backgroundConfiguration = backgroundConfig

@@ -22,10 +22,10 @@ class NadiaProjectTableViewCell: UITableViewCell {
         titleLabel.text = project.title
         descriptionLabel.text = project.description
         gitLinkLabel.text = project.linkGit != nil ?
-            "Git link: see detailed info" :
+            "Git link: provided" :
             "Git link: n/a"
         appStoreLinkLabel.text = project.linkAppStore != nil ?
-            "AppStore link: see detailed info" :
+            "AppStore link: provided" :
             "AppStore link: n/a"
     }
 

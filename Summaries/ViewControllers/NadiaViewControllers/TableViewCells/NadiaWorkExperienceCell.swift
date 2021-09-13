@@ -20,7 +20,7 @@ class NadiaWorkExperienceCell: UITableViewCell {
 
     func setUpCell(for work: WorkPlaceN) {
         placeLabel.text = work.company
-        periodLabel.text = "\(work.dateOfStart)-\(work.dateOfFinishing)"
+        periodLabel.text = "\(work.dateOfStart) - \(work.dateOfFinishing)"
         positionLabel.text = work.position
         descriptionLabel.text = work.description
     }

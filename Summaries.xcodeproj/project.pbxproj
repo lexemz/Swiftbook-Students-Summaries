@@ -25,6 +25,7 @@
 		FD7E975326EDEA6800751A18 /* NadiaCertificateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975226EDEA6800751A18 /* NadiaCertificateTableViewCell.swift */; };
 		FD7E975526EDEA8100751A18 /* NadiaProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975426EDEA8100751A18 /* NadiaProjectTableViewCell.swift */; };
 		FD7E975926EF128E00751A18 /* NadiaProjectDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975826EF128E00751A18 /* NadiaProjectDetailedViewController.swift */; };
+		FD7E975B26EF35A000751A18 /* NadiaDetailedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975A26EF35A000751A18 /* NadiaDetailedImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FD7E975226EDEA6800751A18 /* NadiaCertificateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaCertificateTableViewCell.swift; sourceTree = "<group>"; };
 		FD7E975426EDEA8100751A18 /* NadiaProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaProjectTableViewCell.swift; sourceTree = "<group>"; };
 		FD7E975826EF128E00751A18 /* NadiaProjectDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NadiaProjectDetailedViewController.swift; path = Summaries/Storyboards/NadiaProjectDetailedViewController.swift; sourceTree = SOURCE_ROOT; };
+		FD7E975A26EF35A000751A18 /* NadiaDetailedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaDetailedImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				FD7E974826EC90B900751A18 /* NadiaMainResumeViewController.swift */,
 				FD7E974C26EDDED700751A18 /* NadiaDetailedInfoViewController.swift */,
 				FD7E975826EF128E00751A18 /* NadiaProjectDetailedViewController.swift */,
+				FD7E975A26EF35A000751A18 /* NadiaDetailedImageViewController.swift */,
 				FD7E975726EE01B900751A18 /* TableViewCells */,
 			);
 			path = NadiaViewControllers;
@@ -227,6 +230,7 @@
 				789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */,
 				FD7E974F26EDE92300751A18 /* NadiaWorkExperienceCell.swift in Sources */,
 				789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */,
+				FD7E975B26EF35A000751A18 /* NadiaDetailedImageViewController.swift in Sources */,
 				789DBF4C26EAAAB4005F86D8 /* IgorProfileRootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

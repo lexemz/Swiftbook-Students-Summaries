@@ -113,33 +113,33 @@ struct PersonN {
                 description: "Simple app you can change color using rgb sliders or values",
                 linkAppStore: nil,
                 linkGit: "https://github.com/NadzeyaShpakouskaya/SliderHomeWork.git",
-                image: nil
+                image: "ColorPicker"
             ),
             ProjectN(
                 title: "Contact List",
                 description: "Simple app based on tabbar and tableviews displaying base information of contacts",
                 linkAppStore: nil,
                 linkGit: "https://github.com/NadzeyaShpakouskaya/ContactListApp",
-                image: nil
+                image: "ContactList"
             ),
             ProjectN(
                 title: "Personal resume",
                 description: "Simple app providing basic information in resume style",
                 linkAppStore: nil,
                 linkGit: "https://github.com/NadzeyaShpakouskaya/LoginHomeWork.git",
-                image: nil
+                image: "PersonalResume"
             ),
             ProjectN(
                 title: "Summaries group 22",
                 description: "Collaboration app to practice workin in team using github.",
                 linkAppStore: nil,
                 linkGit: "https://github.com/lexemz/Swiftbook-Students-Summaries.git",
-                image: nil
+                image: "Summaries"
             ),
             ProjectN(
                 title: "Game Level Helper",
                 description: "The application help to manage the game process of Munchkin cards games.",
-                linkAppStore: "https://apps.apple.com/us/app/game-level-helper/id1499312939",
+                linkAppStore: "http://itunes.apple.com/us/app/id1499312939&mt=8",
                 linkGit: nil,
                 image: nil
             )

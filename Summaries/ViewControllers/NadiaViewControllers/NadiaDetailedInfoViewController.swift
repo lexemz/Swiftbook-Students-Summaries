@@ -71,10 +71,8 @@ class NadiaDetailedInfoViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch typeInfo {
-        case .project: return 200
-        case .work: return 160
+        case .project, .work, .education: return 150
         case .certificate: return 100
-        case .education: return 150
         case .none: return 50
         }
     }
@@ -87,6 +85,26 @@ class NadiaDetailedInfoViewController: UITableViewController {
         case .education: return "🧑🏻‍🎓 Education"
         case .none: return nil
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let header = view as? UITableViewHeaderFooterView else { return }
+        var contentConfig = header.defaultContentConfiguration()
+        contentConfig.textProperties.font = UIFont(name: "MuktaMahee Bold", size: 22)
+            ?? UIFont.systemFont(ofSize: 22)
+        switch typeInfo {
+        case .work: contentConfig.text = "🏢 Work Experience"
+        case .education: contentConfig.text = "🧑🏻‍🎓 Education"
+        case .certificate: contentConfig.text = "🎖 Certificates"
+        case .project: contentConfig.text = "🎯 Projects"
+        default: contentConfig.text = "More"
+        }
+        contentConfig.textProperties.color = UIColor.white
+        header.contentConfiguration = contentConfig
+
+        var backgroundConfig = UIBackgroundConfiguration.listPlainHeaderFooter()
+        backgroundConfig.backgroundColor = .darkGray
+        header.backgroundConfiguration = backgroundConfig
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
