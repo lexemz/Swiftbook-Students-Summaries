@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CBC031026EF646F005F2BE6 /* PersonDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC030F26EF646F005F2BE6 /* PersonDN.swift */; };
+		2CBC031226EF6CD1005F2BE6 /* ProfessionDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */; };
 		789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF3226EAA4C3005F86D8 /* AppDelegate.swift */; };
 		789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF3426EAA4C3005F86D8 /* SceneDelegate.swift */; };
 		789DBF3A26EAA4C3005F86D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789DBF3826EAA4C3005F86D8 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CBC030F26EF646F005F2BE6 /* PersonDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDN.swift; sourceTree = "<group>"; };
+		2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionDN.swift; sourceTree = "<group>"; };
 		789DBF2F26EAA4C3005F86D8 /* Summaries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Summaries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		789DBF3226EAA4C3005F86D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		789DBF3426EAA4C3005F86D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		789DBF3126EAA4C3005F86D8 /* Summaries */ = {
 			isa = PBXGroup;
 			children = (
+				2CBC030F26EF646F005F2BE6 /* PersonDN.swift */,
+				2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */,
 				789DBF4726EAA600005F86D8 /* App */,
 				789DBF4826EAA721005F86D8 /* ViewControllers */,
 				789DBF4626EAA5E8005F86D8 /* Storyboards */,
@@ -176,10 +182,12 @@
 				789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */,
 				789DBF4A26EAA909005F86D8 /* TabBarController.swift in Sources */,
 				789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */,
+				2CBC031026EF646F005F2BE6 /* PersonDN.swift in Sources */,
 				789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */,
 				789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */,
 				789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */,
 				789DBF4C26EAAAB4005F86D8 /* IgorProfileRootViewController.swift in Sources */,
+				2CBC031226EF6CD1005F2BE6 /* ProfessionDN.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
