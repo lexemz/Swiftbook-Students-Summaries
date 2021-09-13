@@ -9,6 +9,7 @@ struct Person {
     let name: String
     let surname: String
     
+    let photo: Photo
     let profession: Profession
     
     var fullName: String {
@@ -16,6 +17,12 @@ struct Person {
     }
     
     static func getPerson() -> Person {
-        Person(name: "Дмитрий", surname: "Данилин", profession: Profession.getProfession())
+        Person(name: "Дмитрий", surname: "Данилин", photo: Photo.dmitriy, profession: Profession.getProfession())
+    }
+}
+
+extension Person {
+    enum Photo: String {
+        case dmitriy = "dmitriyPhoto"
     }
 }
