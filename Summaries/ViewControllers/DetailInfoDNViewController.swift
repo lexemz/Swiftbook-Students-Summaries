@@ -23,8 +23,11 @@ class DetailInfoDNViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Default setup
+        setupTitleVC()
+        setupLabels()
+        setupProjectsButton()
     }
     
 
@@ -41,3 +44,21 @@ class DetailInfoDNViewController: UIViewController {
 }
 
 // MARK: - Default setup methods
+extension DetailInfoDNViewController {
+    private func setupTitleVC() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = person.fullName
+    }
+    
+    private func setupLabels() {
+        ageLabel.text = String(person.age)
+        englishLvlLabel.text = person.profession.englishLevel.rawValue
+        contactLabel.text = person.contact
+        hobbiesLabel.text = person.hobbies.joined(separator: ", ")
+    }
+    
+    private func setupProjectsButton() {
+        projectsButton.isHidden = true // TODO: убрать строчку при добавлении таблицы с просмотром проектов
+        projectsButton.layer.cornerRadius = 10
+    }
+}
