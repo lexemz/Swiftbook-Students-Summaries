@@ -9,8 +9,16 @@ import UIKit
 
 class DetailInfoDNViewController: UIViewController {
     
+    // MARK: - Outlets
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var englishLvlLabel: UILabel!
+    @IBOutlet weak var contactLabel: UILabel!
+    @IBOutlet weak var hobbiesLabel: UILabel!
+    
+    // MARK: - Transfer data properties
     var person: Person!
 
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,3 +37,5 @@ class DetailInfoDNViewController: UIViewController {
     */
 
 }
+
+// MARK: - Default setup methods

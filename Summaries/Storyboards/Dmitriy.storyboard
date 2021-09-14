@@ -178,6 +178,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cZf-ba-9F4"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="r8C-ue-PEa" id="u9U-fD-PG1"/>
+                        <outlet property="contactLabel" destination="0Oa-iW-JqD" id="5Li-pS-nkt"/>
+                        <outlet property="englishLvlLabel" destination="iLW-7W-tGQ" id="Cg0-QQ-2Zq"/>
+                        <outlet property="hobbiesLabel" destination="VYG-MC-Fs4" id="BBi-Oi-uT7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUd-UL-iGl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
