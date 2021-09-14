@@ -27,9 +27,18 @@ class DmitryProfileRootViewController: UIViewController {
         super.viewDidLoad()
 
         // Defaults setup
-        setupPhotoImageView()
         setupLabels()
         setupMoreInfoButton()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupTitle()
+    }
+    
+    // Использую этот метод, так как без него рамка обрезается не полностью и круга не получается. При запуске размеры высчитываются в зависимости от того, какой экран был выбран в сториборде.
+    override func viewWillLayoutSubviews() {
+        setupPhotoImageView()
     }
     
 
@@ -42,6 +51,10 @@ class DmitryProfileRootViewController: UIViewController {
 
 // MARK: - Default setup methods
 extension DmitryProfileRootViewController {
+    private func setupTitle() {
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
+    
     private func setupPhotoImageView() {
         photoImageView.image = UIImage(named: person.photo.rawValue)
         photoImageView.layer.cornerRadius = photoImageView.frame.height / 2
