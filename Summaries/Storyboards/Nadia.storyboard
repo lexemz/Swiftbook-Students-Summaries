@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q61-gU-XuZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FOW-uP-h3N">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -56,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7X-PG-HZt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3543.4782608695655" y="227.67857142857142"/>
+            <point key="canvasLocation" x="7531.875" y="227.11267605633802"/>
         </scene>
         <!--Nadia Project Detailed View Controller-->
         <scene sceneID="PJa-sb-H86">
@@ -219,7 +219,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yf2-aR-kIM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2842.0289855072465" y="227.67857142857142"/>
+            <point key="canvasLocation" x="6830.625" y="227.11267605633802"/>
         </scene>
         <!--Nadia Detailed Info View Controller-->
         <scene sceneID="vzt-Ys-mQl">
@@ -476,7 +476,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Er7-qk-8En" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2113.0434782608695" y="227.67857142857142"/>
+            <point key="canvasLocation" x="6101.25" y="227.11267605633802"/>
         </scene>
         <!--Nadia Main Resume View Controller-->
         <scene sceneID="cyd-c9-FMQ">
@@ -524,7 +524,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JaR-px-ZQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1434.7826086956522" y="227.67857142857142"/>
+            <point key="canvasLocation" x="5424.375" y="227.11267605633802"/>
         </scene>
         <!--Nadia Root Profile-->
         <scene sceneID="Cuj-GB-kOg">
@@ -583,7 +583,7 @@
                             <constraint firstItem="NDX-x8-lqh" firstAttribute="height" secondItem="7rA-kN-s7a" secondAttribute="height" multiplier="0.28125" id="wjI-gy-lmH"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Nadia" image="person" catalog="system" selectedImage="person.fill" id="XSa-5D-S9e"/>
+                    <tabBarItem key="tabBarItem" title="Nadia" image="person" catalog="system" selectedImage="person.fill" id="RI2-pR-1ec"/>
                     <navigationItem key="navigationItem" title="Nadzeya Shpakouskaya" largeTitleDisplayMode="always" id="jUH-kh-ONZ"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="GtP-0U-Uvb" id="3Qi-yu-dtN"/>
@@ -594,44 +594,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AI4-rN-9ct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="602.89855072463774" y="227.67857142857142"/>
+            <point key="canvasLocation" x="4591.875" y="227.11267605633802"/>
         </scene>
         <!--Nadia-->
-        <scene sceneID="EWW-iv-Tkt">
+        <scene sceneID="HnG-Ul-f5g">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q61-gU-XuZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Nadia" image="person.circle" catalog="system" id="gse-6j-ssb"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FOW-uP-h3N" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Nadia" image="person" catalog="system" selectedImage="person.fill" id="XSa-5D-S9e"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KUQ-oC-XnO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5d0-ZZ-xVW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ed0-EQ-VIy" kind="relationship" relationship="rootViewController" id="jkZ-xF-ovV"/>
+                        <segue destination="el3-39-xtb" kind="relationship" relationship="rootViewController" id="Tby-kG-7QU"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uC2-7y-UXW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QBY-PG-OtQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1078.2608695652175" y="227.67857142857142"/>
+            <point key="canvasLocation" x="2596.875" y="227.11267605633802"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="cwB-EP-CDx">
+        <scene sceneID="0Pw-n5-3M3">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ed0-EQ-VIy" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="el3-39-xtb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="pWQ-t3-o3D"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rjq-KO-mFM">
+                    <navigationItem key="navigationItem" id="15e-aG-Ig3"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Niz-Ne-wlA">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="5rt-WO-zVT" kind="relationship" relationship="viewControllers" id="DrU-8q-1Gc"/>
+                        <segue destination="5rt-WO-zVT" kind="relationship" relationship="viewControllers" id="kFS-4N-fnB"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oSL-6D-Bt2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7e-HW-UZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-307.24637681159425" y="227.67857142857142"/>
+            <point key="canvasLocation" x="3594.375" y="227.11267605633802"/>
         </scene>
     </scenes>
     <resources>
@@ -639,7 +639,6 @@
         <image name="clear" catalog="system" width="128" height="114"/>
         <image name="g.circle" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
