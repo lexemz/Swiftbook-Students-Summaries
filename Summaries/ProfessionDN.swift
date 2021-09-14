@@ -8,6 +8,7 @@
 struct Profession {
     let professionName: String
     let skills: [String]
+    let englishLevel: EnglishLevel
     
     static func getProfession() -> Profession {
         Profession(professionName: "Trainee iOS Develop",
@@ -17,8 +18,17 @@ struct Profession {
                             "CoreData",
                             "Realm",
                             "MVC",
-                            "GIT",
-                            "Работа в команде",
-                            "Уровень английского - А2"])
+                            "Git",
+                            "Работа в команде"],
+                   englishLevel: EnglishLevel.a2)
     }
+}
+
+enum EnglishLevel: String {
+    case a1 = "A1 (Beginner)"
+    case a2 = "A2 (Elementary)"
+    case b1 = "B1 (Intermediate)"
+    case b2 = "B2 (Upper-Intermediate)"
+    case c1 = "C1 (Advanced)"
+    case c2 = "C2 (Proficiency)"
 }
