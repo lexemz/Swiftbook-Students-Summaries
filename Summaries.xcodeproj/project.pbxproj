@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C0FEF9526F0B2DC0098EDA9 /* DetailInfoDNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0FEF9426F0B2DC0098EDA9 /* DetailInfoDNViewController.swift */; };
+		2C0FEF9926F0C9A90098EDA9 /* ProjectDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */; };
 		2C91B6A726EF9255001A46C9 /* Dmitriy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C91B6A626EF9255001A46C9 /* Dmitriy.storyboard */; };
 		2CBC031026EF646F005F2BE6 /* PersonDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC030F26EF646F005F2BE6 /* PersonDN.swift */; };
 		2CBC031226EF6CD1005F2BE6 /* ProfessionDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		2C0FEF9426F0B2DC0098EDA9 /* DetailInfoDNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoDNViewController.swift; sourceTree = "<group>"; };
+		2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDN.swift; sourceTree = "<group>"; };
 		2C91B6A626EF9255001A46C9 /* Dmitriy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dmitriy.storyboard; sourceTree = "<group>"; };
 		2CBC030F26EF646F005F2BE6 /* PersonDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDN.swift; sourceTree = "<group>"; };
 		2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionDN.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				2CBC030F26EF646F005F2BE6 /* PersonDN.swift */,
 				2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */,
+				2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */,
 				789DBF4726EAA600005F86D8 /* App */,
 				789DBF4826EAA721005F86D8 /* ViewControllers */,
 				789DBF4626EAA5E8005F86D8 /* Storyboards */,
@@ -193,6 +196,7 @@
 				789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */,
 				789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */,
 				2C0FEF9526F0B2DC0098EDA9 /* DetailInfoDNViewController.swift in Sources */,
+				2C0FEF9926F0C9A90098EDA9 /* ProjectDN.swift in Sources */,
 				789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */,
 				789DBF4C26EAAAB4005F86D8 /* IgorProfileRootViewController.swift in Sources */,
 				2CBC031226EF6CD1005F2BE6 /* ProfessionDN.swift in Sources */,
