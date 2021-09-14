@@ -11,7 +11,7 @@ class IgorProfileRootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = UIColor.systemPink
         // Do any additional setup after loading the view.
     }
     
