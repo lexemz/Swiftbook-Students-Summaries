@@ -79,7 +79,7 @@ struct PersonN {
                 dateOfStart: "Sept. 2006",
                 dateOfFinishing: "Febr. 2012"),
             EducationN(
-                name: "Minsk Architecture and Construction College",
+                name: "Minsk State Architecture College",
                 levelDegree: .associate,
                 specialization: "Management and Economy at Construction",
                 dateOfStart: "Sept. 2003",

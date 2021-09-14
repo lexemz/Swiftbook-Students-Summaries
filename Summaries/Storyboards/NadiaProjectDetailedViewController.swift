@@ -22,29 +22,17 @@ class NadiaProjectDetailedViewController: UITableViewController {
         super.viewDidLoad()
         setUpUI()
         title = project.title
+        navigationController?.navigationBar.topItem?.backButtonTitle = "Back"
     }
     
     // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 2 {
             guard let string = project.linkAppStore, let url = URL(string: string) else { return }
-            UIApplication.shared.open(url) { success in
-                if success {
-                    print("The URL was delivered successfully.")
-                } else {
-                    print("The URL failed to open.")
-                }
-            }
+            UIApplication.shared.open(url)
         } else if indexPath.row == 3 {
             guard let string = project.linkGit, let url = URL(string: string) else { return }
-            
-            UIApplication.shared.open(url) { success in
-                if success {
-                    print("The URL was delivered successfully.")
-                } else {
-                    print("The URL failed to open.")
-                }
-            }
+            UIApplication.shared.open(url)
         }
     }
     
@@ -58,7 +46,11 @@ class NadiaProjectDetailedViewController: UITableViewController {
     private func setUpUI() {
         previewImage.image = UIImage(named: project.image ?? "nadiaPreviewPlaceholder")
         descriptionLabel.text = project.description
-        gitLinkLabel.text = project.linkGit != nil ? "GitHub - Click to open" : "GitHub Link is not available"
-        appstoreLinkLabel.text = project.linkAppStore != nil ? "AppStore - Click to open" : "AppStore link is not available"
+        gitLinkLabel.text = project.linkGit != nil ?
+            "✔︎ GitHub: Click to open" :
+            "✘ GitHub link is not available"
+        appstoreLinkLabel.text = project.linkAppStore != nil ?
+            "✔︎ AppStore: Click to open" :
+            "✘ AppStore link is not available"
     }
 }

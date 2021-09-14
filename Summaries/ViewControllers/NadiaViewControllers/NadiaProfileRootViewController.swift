@@ -15,7 +15,7 @@ class NadiaProfileRootViewController: UIViewController {
     @IBOutlet weak var moreInfoButton: UIButton!
     
     // MARK: - Private Properties
-    let person = PersonN.nadia
+    private let person = PersonN.nadia
     
     // MARK: - Override methods
     override func viewDidLoad() {
@@ -24,6 +24,16 @@ class NadiaProfileRootViewController: UIViewController {
         setUpLabels()
         setUpButton()
         setUpView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.topItem?.title = person.fullname
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.topItem?.title = ""
     }
     
      // MARK: - Navigation

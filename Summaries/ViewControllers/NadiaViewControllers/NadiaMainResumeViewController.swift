@@ -167,6 +167,10 @@ class NadiaMainResumeViewController: UITableViewController {
         performSegue(withIdentifier: "detailedInfoN", sender: (person, selectedDetailedInfo))
     }
     
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        48
+    }
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailedVC = segue.destination as? NadiaDetailedInfoViewController else { return }
