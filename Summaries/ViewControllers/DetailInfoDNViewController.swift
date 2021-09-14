@@ -8,6 +8,8 @@
 import UIKit
 
 class DetailInfoDNViewController: UIViewController {
+    
+    var person: Person!
 
     override func viewDidLoad() {
         super.viewDidLoad()
