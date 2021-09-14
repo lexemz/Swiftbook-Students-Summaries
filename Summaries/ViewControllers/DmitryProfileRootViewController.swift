@@ -11,9 +11,11 @@ class DmitryProfileRootViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var photoImageView: UIImageView!
+    
     @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet weak var professionLabel: UILabel!
     @IBOutlet weak var skillsLabel: UILabel!
+    
     @IBOutlet weak var moreInfoButton: UIButton!
     
     // MARK: - Private properties
