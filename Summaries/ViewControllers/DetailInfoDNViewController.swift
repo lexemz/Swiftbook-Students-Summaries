@@ -15,6 +15,8 @@ class DetailInfoDNViewController: UIViewController {
     @IBOutlet weak var contactLabel: UILabel!
     @IBOutlet weak var hobbiesLabel: UILabel!
     
+    @IBOutlet weak var projectsButton: UIButton!
+    
     // MARK: - Transfer data properties
     var person: Person!
 
