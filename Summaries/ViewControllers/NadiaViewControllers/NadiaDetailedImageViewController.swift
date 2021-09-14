@@ -8,29 +8,20 @@
 import UIKit
 
 class NadiaDetailedImageViewController: UIViewController {
-
+    // MARK: - IBOutlets
     @IBOutlet weak var image: UIImageView!
     
+    // MARK: - Public properties
     var imageFullSize: String!
     
+    // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         image.image = UIImage(named: imageFullSize ?? "nadiaPreviewPlaceholder")
-
     }
     
+    // MARK: - IBAction
     @IBAction func closeButtonPressed() {
         dismiss(animated: true)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

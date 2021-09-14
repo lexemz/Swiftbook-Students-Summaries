@@ -44,7 +44,7 @@ class NadiaProfileRootViewController: UIViewController {
     
     private func setUpImage() {
         photoImageView.layer.cornerRadius = 15
-        photoImageView.image = UIImage(named: person.photoLink ?? "person.fill")
+        photoImageView.image = UIImage(named: person.photoLink ?? "nadiaPreviewPlaceholder")
         photoImageView.layer.borderWidth = 5
         photoImageView.layer.borderColor = UIColor.darkGray.cgColor
     }
@@ -55,11 +55,7 @@ class NadiaProfileRootViewController: UIViewController {
             middleColor: .white,
             bottomColor: .lightGray
         )
-    }
-    
-    
-
-    
+    }  
 }
 
 extension UIView {

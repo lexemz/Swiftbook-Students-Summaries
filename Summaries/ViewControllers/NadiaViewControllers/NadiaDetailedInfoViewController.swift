@@ -8,19 +8,9 @@
 import UIKit
 
 class NadiaDetailedInfoViewController: UITableViewController {
-    
+    // MARK: - Public Properties
     var typeInfo: DetailedInfoN!
     var person: PersonN!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -28,7 +18,6 @@ class NadiaDetailedInfoViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         var numberOfRows = 0
         switch typeInfo {
         case .project: numberOfRows = person.projects?.count ?? 0
@@ -42,14 +31,13 @@ class NadiaDetailedInfoViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         switch typeInfo {
         case .project:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "projectCell", for: indexPath) as! NadiaProjectTableViewCell
             guard let project = person.projects?[indexPath.row] else { return UITableViewCell()}
             cell.setUpCell(for: project)
-         return cell
+            return cell
         case .work:
             let cell = tableView.dequeueReusableCell(withIdentifier: "workCell", for: indexPath) as! NadiaWorkExperienceCell
             guard let work = person.workPlaces?[indexPath.row] else { return UITableViewCell()}
@@ -59,7 +47,7 @@ class NadiaDetailedInfoViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "certificateCell", for: indexPath) as! NadiaCertificateTableViewCell
             guard let certificate = person.certificates?[indexPath.row] else { return UITableViewCell()}
             cell.setUpCell(for: certificate)
-         return cell
+            return cell
         case .education:
             let cell = tableView.dequeueReusableCell(withIdentifier: "educationCell", for: indexPath) as! NadiaEducationTableViewCell
             guard let education = person.education?[indexPath.row] else { return UITableViewCell()}
@@ -67,8 +55,9 @@ class NadiaDetailedInfoViewController: UITableViewController {
             return cell
         case .none: return UITableViewCell()
         }
-        
     }
+    
+    // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch typeInfo {
         case .project, .work, .education: return 150
@@ -101,14 +90,14 @@ class NadiaDetailedInfoViewController: UITableViewController {
         }
         contentConfig.textProperties.color = UIColor.white
         header.contentConfiguration = contentConfig
-
+        
         var backgroundConfig = UIBackgroundConfiguration.listPlainHeaderFooter()
         backgroundConfig.backgroundColor = .darkGray
         header.backgroundConfiguration = backgroundConfig
     }
-    
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       guard let projectVC = segue.destination as? NadiaProjectDetailedViewController else { return }
+        guard let projectVC = segue.destination as? NadiaProjectDetailedViewController else { return }
         guard let index = tableView.indexPathForSelectedRow?.row,
               let project = person.projects?[index] else { return }
         projectVC.project = project

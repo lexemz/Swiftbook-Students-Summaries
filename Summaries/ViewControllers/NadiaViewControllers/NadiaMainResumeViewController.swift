@@ -8,11 +8,13 @@
 import UIKit
 
 class NadiaMainResumeViewController: UITableViewController {
-    
+    // MARK: - Public Properties
     var person: PersonN!
     
+    // MARK: - Private Properties
     private var selectedDetailedInfo: DetailedInfoN? = nil
     
+    // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = person.fullname
@@ -25,24 +27,22 @@ class NadiaMainResumeViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var rowsInSection = 0
         switch section {
-        case 0: rowsInSection = 7
-        case 1: rowsInSection = person.workPlaces?.count ?? 0
-        case 2: rowsInSection = 1
-        case 3: rowsInSection = person.education?.count ?? 0
-        case 4: rowsInSection = person.certificates?.count ?? 0
-        case 5: rowsInSection = person.projects?.count ?? 0
-        case 6: rowsInSection = person.additionalInfo.count
-        default: break
+        case 0: return 7
+        case 1: return person.workPlaces?.count ?? 0
+        case 2: return 1
+        case 3: return person.education?.count ?? 0
+        case 4: return person.certificates?.count ?? 0
+        case 5:return person.projects?.count ?? 0
+        case 6: return person.additionalInfo.count
+        default: return 0
         }
-        return rowsInSection
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mainNadiaResumeCell", for: indexPath)
-
+        
         var content = cell.defaultContentConfiguration()
         switch indexPath.section {
         case 0:
@@ -78,7 +78,7 @@ class NadiaMainResumeViewController: UITableViewController {
             content.textProperties.alignment = .justified
             content.secondaryText = "\(work.position)"
             cell.accessoryType = .disclosureIndicator
-    
+            
         case 2:
             let skills = person.skills.joined(separator: ", ")
             content.text = skills
@@ -149,7 +149,7 @@ class NadiaMainResumeViewController: UITableViewController {
         }
         contentConfig.textProperties.color = UIColor.white
         header.contentConfiguration = contentConfig
-
+        
         var backgroundConfig = UIBackgroundConfiguration.listPlainHeaderFooter()
         backgroundConfig.backgroundColor = .darkGray
         header.backgroundConfiguration = backgroundConfig
@@ -167,48 +167,12 @@ class NadiaMainResumeViewController: UITableViewController {
         performSegue(withIdentifier: "detailedInfoN", sender: (person, selectedDetailedInfo))
     }
     
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-         // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailedVC = segue.destination as? NadiaDetailedInfoViewController else { return }
         detailedVC.person = person
         detailedVC.typeInfo = selectedDetailedInfo
-     }
-   
+    }
+    
     
 }

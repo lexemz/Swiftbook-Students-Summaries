@@ -8,15 +8,13 @@
 import UIKit
 
 class NadiaEducationTableViewCell: UITableViewCell {
+    // MARK: - IBOutlets
     @IBOutlet weak var instituteNameLabel: UILabel!
     @IBOutlet weak var periodLabel: UILabel!
     @IBOutlet weak var levelDegreeLabel: UILabel!
     @IBOutlet weak var specialization: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
+
+    // MARK: - Public methods
     func setUpCell(for education: EducationN) {
         instituteNameLabel.text = education.name
         periodLabel.text = "\(education.dateOfStart) - \(education.dateOfFinishing)"
