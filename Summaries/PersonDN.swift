@@ -8,6 +8,9 @@
 struct Person {
     let name: String
     let surname: String
+    let age: Int
+    let contact: String
+    let hobbies: [String]
     
     let photo: Photo
     let profession: Profession
@@ -19,13 +22,19 @@ struct Person {
     static func getPerson() -> Person {
         Person(name: "Дмитрий",
                surname: "Данилин",
+               age: 33,
+               contact: "zyfunphoto.ru",
+               hobbies: ["Программирование",
+                         "Настольные игры",
+                         "Фотосъёмка",
+                         "Велоспорт",
+                         "Горные лыжи"],
                photo: Photo.dmitriy,
                profession: Profession.getProfession())
     }
 }
 
-extension Person {
-    enum Photo: String {
-        case dmitriy = "dmitriyPhoto"
-    }
+
+enum Photo: String {
+    case dmitriy = "dmitriyPhoto"
 }
