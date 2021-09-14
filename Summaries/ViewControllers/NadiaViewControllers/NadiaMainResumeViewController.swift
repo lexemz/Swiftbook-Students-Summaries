@@ -17,7 +17,7 @@ class NadiaMainResumeViewController: UITableViewController {
     // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = person.fullname
+        navigationItem.title = person.fullname
     }
     
     // MARK: - Table view data source

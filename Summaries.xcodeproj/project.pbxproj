@@ -26,6 +26,7 @@
 		FD7E975526EDEA8100751A18 /* NadiaProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975426EDEA8100751A18 /* NadiaProjectTableViewCell.swift */; };
 		FD7E975926EF128E00751A18 /* NadiaProjectDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975826EF128E00751A18 /* NadiaProjectDetailedViewController.swift */; };
 		FD7E975B26EF35A000751A18 /* NadiaDetailedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975A26EF35A000751A18 /* NadiaDetailedImageViewController.swift */; };
+		FD7E975D26F0653C00751A18 /* Nadia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7E975C26F0653C00751A18 /* Nadia.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		FD7E975426EDEA8100751A18 /* NadiaProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaProjectTableViewCell.swift; sourceTree = "<group>"; };
 		FD7E975826EF128E00751A18 /* NadiaProjectDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NadiaProjectDetailedViewController.swift; path = Summaries/Storyboards/NadiaProjectDetailedViewController.swift; sourceTree = SOURCE_ROOT; };
 		FD7E975A26EF35A000751A18 /* NadiaDetailedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaDetailedImageViewController.swift; sourceTree = "<group>"; };
+		FD7E975C26F0653C00751A18 /* Nadia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Nadia.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				789DBF3826EAA4C3005F86D8 /* Main.storyboard */,
+				FD7E975C26F0653C00751A18 /* Nadia.storyboard */,
 				789DBF3D26EAA4C7005F86D8 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -203,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7E975D26F0653C00751A18 /* Nadia.storyboard in Resources */,
 				789DBF3F26EAA4C7005F86D8 /* LaunchScreen.storyboard in Resources */,
 				789DBF3C26EAA4C7005F86D8 /* Assets.xcassets in Resources */,
 				789DBF3A26EAA4C3005F86D8 /* Main.storyboard in Resources */,
