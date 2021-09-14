@@ -51,6 +51,9 @@
                                 <state key="normal" title="More Info">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="o3q-WP-VY8" kind="show" id="FSI-o0-3p9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aPi-6U-wCz"/>
@@ -81,6 +84,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bez-y5-EEj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-468" y="240"/>
+        </scene>
+        <!--Detail InfoDN View Controller-->
+        <scene sceneID="vr2-wc-rj8">
+            <objects>
+                <viewController id="o3q-WP-VY8" customClass="DetailInfoDNViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QYL-rD-tVi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DNT-vc-NUV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cZf-ba-9F4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TUd-UL-iGl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="240"/>
         </scene>
     </scenes>
     <resources>
