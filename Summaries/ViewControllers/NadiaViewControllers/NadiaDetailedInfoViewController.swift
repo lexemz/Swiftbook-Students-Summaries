@@ -38,16 +38,7 @@ class NadiaDetailedInfoViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        var numberOfRows = 0
-//        switch typeInfo {
-//        case .project: numberOfRows = person.projects?.count ?? 0
-//        case .work: numberOfRows = person.workPlaces?.count ?? 0
-//        case .certificate: numberOfRows = person.certificates?.count ?? 0
-//        case .education: numberOfRows = person.education?.count ?? 0
-//        case .none: break
-//        }
-//        return numberOfRows
- 1
+        1
     }
     
     
@@ -81,8 +72,7 @@ class NadiaDetailedInfoViewController: UITableViewController {
     // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch typeInfo {
-        case .project: return 150
-        case .education, .work: return 100
+        case .education, .work, .project: return 100
         case .certificate: return 75
         case .none: return 50
         }
@@ -116,7 +106,7 @@ class NadiaDetailedInfoViewController: UITableViewController {
         contentConfig.textProperties.color = UIColor.darkGray
         contentConfig.textProperties.adjustsFontSizeToFitWidth = true
         header.contentConfiguration = contentConfig
-
+        
         var backgroundConfig = UIBackgroundConfiguration.listPlainHeaderFooter()
         backgroundConfig.backgroundColor = .systemGray5
         header.backgroundConfiguration = backgroundConfig
@@ -124,7 +114,7 @@ class NadiaDetailedInfoViewController: UITableViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let projectVC = segue.destination as? NadiaProjectDetailedViewController else { return }
-        guard let index = tableView.indexPathForSelectedRow?.row,
+        guard let index = tableView.indexPathForSelectedRow?.section,
               let project = person.projects?[index] else { return }
         projectVC.project = project
     }

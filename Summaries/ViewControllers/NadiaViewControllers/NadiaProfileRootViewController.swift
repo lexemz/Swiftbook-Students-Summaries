@@ -26,16 +26,6 @@ class NadiaProfileRootViewController: UIViewController {
         setUpView()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.navigationBar.topItem?.title = person.fullname
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.navigationBar.topItem?.title = ""
-    }
-    
      // MARK: - Navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let resumeVC = segue.destination as? NadiaMainResumeViewController else { return }

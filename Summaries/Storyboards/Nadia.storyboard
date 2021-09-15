@@ -208,30 +208,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="projectCell" rowHeight="126" id="LbY-qJ-GZ8" customClass="NadiaProjectTableViewCell" customModule="Summaries" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="49.5" width="320" height="126"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="projectCell" rowHeight="77" id="LbY-qJ-GZ8" customClass="NadiaProjectTableViewCell" customModule="Summaries" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="49.5" width="320" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LbY-qJ-GZ8" id="MBR-uZ-5O7">
-                                    <rect key="frame" x="0.0" y="0.0" width="294.5" height="126"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="294.5" height="77"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="p4d-SF-bth">
-                                            <rect key="frame" x="20" y="5" width="254.5" height="116"/>
+                                            <rect key="frame" x="20" y="5" width="254.5" height="67"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwL-Vd-98p">
-                                                    <rect key="frame" x="0.0" y="0.0" width="254.5" height="30"/>
-                                                    <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o9n-zn-3Ug">
-                                                    <rect key="frame" x="0.0" y="47" width="254.5" height="27"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="254.5" height="27"/>
                                                     <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LGI-45-ia5">
-                                                    <rect key="frame" x="0.0" y="91" width="254.5" height="25"/>
+                                                    <rect key="frame" x="0.0" y="42" width="254.5" height="25"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Git Link" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="se9-M0-n4k" userLabel="git link">
                                                             <rect key="frame" x="0.0" y="0.0" width="127.5" height="25"/>
@@ -261,12 +255,11 @@
                                     <outlet property="appStoreLinkLabel" destination="gFV-ej-S08" id="bH4-uW-ToH"/>
                                     <outlet property="descriptionLabel" destination="o9n-zn-3Ug" id="e9s-0b-Lt9"/>
                                     <outlet property="gitLinkLabel" destination="se9-M0-n4k" id="BCw-tJ-sjF"/>
-                                    <outlet property="titleLabel" destination="UwL-Vd-98p" id="Vhr-d7-nO4"/>
                                     <segue destination="ucb-rQ-VdK" kind="show" identifier="projectDetailed" id="RSk-Ke-b9Y"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="certificateCell" rowHeight="76" id="1KN-0w-LOc" customClass="NadiaCertificateTableViewCell" customModule="Summaries" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="175.5" width="320" height="76"/>
+                                <rect key="frame" x="0.0" y="126.5" width="320" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1KN-0w-LOc" id="ApJ-XW-4Ck">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
@@ -315,7 +308,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="educationCell" rowHeight="150" id="tBi-aY-fgo" customClass="NadiaEducationTableViewCell" customModule="Summaries" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="251.5" width="320" height="150"/>
+                                <rect key="frame" x="0.0" y="202.5" width="320" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tBi-aY-fgo" id="uQI-Wb-Lth">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
@@ -375,7 +368,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="workCell" rowHeight="152" id="y5r-ru-pOh" customClass="NadiaWorkExperienceCell" customModule="Summaries" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="401.5" width="320" height="152"/>
+                                <rect key="frame" x="0.0" y="352.5" width="320" height="152"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y5r-ru-pOh" id="C51-lg-t8c">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
