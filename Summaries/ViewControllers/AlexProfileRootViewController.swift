@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AlexProfileRootViewController: UIViewController {
+class AlexProfileRootViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
