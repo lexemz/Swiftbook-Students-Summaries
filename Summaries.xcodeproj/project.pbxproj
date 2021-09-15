@@ -17,6 +17,7 @@
 		789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */; };
 		789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */; };
 		789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */; };
+		EA8D44EE26F272C800A3D591 /* Alex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8D44ED26F272C800A3D591 /* Alex.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmitryProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaProfileRootViewController.swift; sourceTree = "<group>"; };
+		EA8D44ED26F272C800A3D591 /* Alex.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alex.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		789DBF4626EAA5E8005F86D8 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				EA8D44ED26F272C800A3D591 /* Alex.storyboard */,
 				789DBF3826EAA4C3005F86D8 /* Main.storyboard */,
 				789DBF3D26EAA4C7005F86D8 /* LaunchScreen.storyboard */,
 			);
@@ -160,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8D44EE26F272C800A3D591 /* Alex.storyboard in Resources */,
 				789DBF3F26EAA4C7005F86D8 /* LaunchScreen.storyboard in Resources */,
 				789DBF3C26EAA4C7005F86D8 /* Assets.xcassets in Resources */,
 				789DBF3A26EAA4C3005F86D8 /* Main.storyboard in Resources */,
