@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="-468" y="240"/>
         </scene>
-        <!--AlexStoryboard-->
+        <!--alexRootViewController-->
         <scene sceneID="GpC-5Q-8Wr">
             <objects>
-                <viewControllerPlaceholder storyboardName="Alex" referencedIdentifier="AlexStoryboard" id="yje-0W-bvK" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Alex" referencedIdentifier="alexRootViewController" id="yje-0W-bvK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="bfs-fJ-cjN"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdw-Ca-fdl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
