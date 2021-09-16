@@ -5,24 +5,26 @@
 //  Created by Дмитрий Данилин on 13.09.2021.
 //
 
-struct Person {
+struct PersonDN {
     let name: String
     let surname: String
     let age: Int
+    let englishLevel: EnglishLevel
     let contact: String
     let hobbies: [String]
     
     let photo: Photo
-    let profession: Profession
+    let profession: ProfessionDN
     
     var fullName: String {
         "\(name) \(surname)"
     }
     
-    static func getPerson() -> Person {
-        Person(name: "Дмитрий",
+    static func getPerson() -> PersonDN {
+        PersonDN(name: "Дмитрий",
                surname: "Данилин",
                age: 33,
+               englishLevel: EnglishLevel.a2,
                contact: "zyfunphoto.ru",
                hobbies: ["Программирование",
                          "Настольные игры",
@@ -30,11 +32,20 @@ struct Person {
                          "Велоспорт",
                          "Горные лыжи"],
                photo: Photo.dmitriy,
-               profession: Profession.getProfession())
+               profession: ProfessionDN.getProfession())
     }
 }
 
 
 enum Photo: String {
     case dmitriy = "dmitriyPhoto"
+}
+
+enum EnglishLevel: String {
+    case a1 = "A1 (Beginner)"
+    case a2 = "A2 (Elementary)"
+    case b1 = "B1 (Intermediate)"
+    case b2 = "B2 (Upper-Intermediate)"
+    case c1 = "C1 (Advanced)"
+    case c2 = "C2 (Proficiency)"
 }

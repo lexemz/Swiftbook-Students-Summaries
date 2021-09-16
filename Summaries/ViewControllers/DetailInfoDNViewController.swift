@@ -18,7 +18,7 @@ class DetailInfoDNViewController: UIViewController {
     @IBOutlet weak var projectsButton: UIButton!
     
     // MARK: - Transfer data properties
-    var person: Person!
+    var person: PersonDN!
 
     // MARK: - Life Cycle
     override func viewDidLoad() {

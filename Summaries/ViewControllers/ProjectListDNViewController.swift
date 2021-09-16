@@ -10,7 +10,7 @@ import UIKit
 class ProjectListDNViewController: UITableViewController {
     
     // MARK: - Transfer data properties
-    var projects: [Project] = []
+    var projects: [ProjectDN] = []
 
     // MARK: - Life Cycle
     override func viewDidLoad() {

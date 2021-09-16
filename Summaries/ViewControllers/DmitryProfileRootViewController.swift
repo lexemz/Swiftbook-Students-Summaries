@@ -19,7 +19,7 @@ class DmitryProfileRootViewController: UIViewController {
     @IBOutlet weak var moreInfoButton: UIButton!
     
     // MARK: - Private properties
-    private let person = Person.getPerson()
+    private let person = PersonDN.getPerson()
     
 
     // MARK: - Life Cycle
