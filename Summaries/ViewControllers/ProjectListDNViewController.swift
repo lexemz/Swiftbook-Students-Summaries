@@ -40,7 +40,16 @@ class ProjectListDNViewController: UITableViewController {
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+
+        guard let link = projects[indexPath.row].linkGitHub else { return }
+        if let url = URL(string: link) {
+            UIApplication.shared.open(url)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
