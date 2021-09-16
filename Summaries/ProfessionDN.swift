@@ -9,6 +9,7 @@ struct Profession {
     let professionName: String
     let skills: [String]
     let englishLevel: EnglishLevel
+    let projects: [Project]
     
     static func getProfession() -> Profession {
         Profession(professionName: "Trainee iOS Develop",
@@ -20,7 +21,8 @@ struct Profession {
                             "MVC",
                             "Git",
                             "Работа в команде"],
-                   englishLevel: EnglishLevel.a2)
+                   englishLevel: EnglishLevel.a2,
+                   projects: Project.getProjects())
     }
 }
 
