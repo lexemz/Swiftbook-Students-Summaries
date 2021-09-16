@@ -46,7 +46,7 @@ extension DetailInfoDNViewController {
     
     private func setupLabels() {
         ageLabel.text = String(person.age)
-        englishLvlLabel.text = person.profession.englishLevel.rawValue
+        englishLvlLabel.text = person.englishLevel.rawValue
         contactLabel.text = person.contact
         hobbiesLabel.text = person.hobbies.joined(separator: ", ")
     }
