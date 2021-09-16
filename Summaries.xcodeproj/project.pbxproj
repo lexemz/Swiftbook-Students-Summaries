@@ -27,6 +27,10 @@
 		FD7E975926EF128E00751A18 /* NadiaProjectDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975826EF128E00751A18 /* NadiaProjectDetailedViewController.swift */; };
 		FD7E975B26EF35A000751A18 /* NadiaDetailedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975A26EF35A000751A18 /* NadiaDetailedImageViewController.swift */; };
 		FD7E975D26F0653C00751A18 /* Nadia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7E975C26F0653C00751A18 /* Nadia.storyboard */; };
+		FD7E975F26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975E26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift */; };
+		FD7E976126F326FF00751A18 /* NadiaDefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E976026F326FF00751A18 /* NadiaDefaultTableViewCell.swift */; };
+		FD7E976426F33C9200751A18 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E976326F33C9200751A18 /* Extension+UIView.swift */; };
+		FD7E976626F33D1100751A18 /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E976526F33D1100751A18 /* Extension+UITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		FD7E975826EF128E00751A18 /* NadiaProjectDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NadiaProjectDetailedViewController.swift; path = Summaries/Storyboards/NadiaProjectDetailedViewController.swift; sourceTree = SOURCE_ROOT; };
 		FD7E975A26EF35A000751A18 /* NadiaDetailedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaDetailedImageViewController.swift; sourceTree = "<group>"; };
 		FD7E975C26F0653C00751A18 /* Nadia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Nadia.storyboard; sourceTree = "<group>"; };
+		FD7E975E26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaShortFormResumeViewController.swift; sourceTree = "<group>"; };
+		FD7E976026F326FF00751A18 /* NadiaDefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaDefaultTableViewCell.swift; sourceTree = "<group>"; };
+		FD7E976326F33C9200751A18 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		FD7E976526F33D1100751A18 /* Extension+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +94,10 @@
 			children = (
 				789DBF4726EAA600005F86D8 /* App */,
 				789DBF4826EAA721005F86D8 /* ViewControllers */,
+				FD7E976726F33D6500751A18 /* Extensions */,
 				789DBF4626EAA5E8005F86D8 /* Storyboards */,
 				789DBF3B26EAA4C7005F86D8 /* Assets.xcassets */,
-				FD7E974A26ECA5D700751A18 /* PersonN.swift */,
+				FD7E976226F33BB300751A18 /* Models */,
 			);
 			path = Summaries;
 			sourceTree = "<group>";
@@ -132,6 +141,7 @@
 				FD7E974826EC90B900751A18 /* NadiaMainResumeViewController.swift */,
 				FD7E974C26EDDED700751A18 /* NadiaDetailedInfoViewController.swift */,
 				FD7E975826EF128E00751A18 /* NadiaProjectDetailedViewController.swift */,
+				FD7E975E26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift */,
 				FD7E975A26EF35A000751A18 /* NadiaDetailedImageViewController.swift */,
 				FD7E975726EE01B900751A18 /* TableViewCells */,
 			);
@@ -142,11 +152,29 @@
 			isa = PBXGroup;
 			children = (
 				FD7E974E26EDE92300751A18 /* NadiaWorkExperienceCell.swift */,
+				FD7E976026F326FF00751A18 /* NadiaDefaultTableViewCell.swift */,
 				FD7E975026EDEA0600751A18 /* NadiaEducationTableViewCell.swift */,
 				FD7E975226EDEA6800751A18 /* NadiaCertificateTableViewCell.swift */,
 				FD7E975426EDEA8100751A18 /* NadiaProjectTableViewCell.swift */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		FD7E976226F33BB300751A18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD7E974A26ECA5D700751A18 /* PersonN.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD7E976726F33D6500751A18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD7E976326F33C9200751A18 /* Extension+UIView.swift */,
+				FD7E976526F33D1100751A18 /* Extension+UITableView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +257,13 @@
 				FD7E974B26ECA5D700751A18 /* PersonN.swift in Sources */,
 				789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */,
 				FD7E975126EDEA0600751A18 /* NadiaEducationTableViewCell.swift in Sources */,
+				FD7E975F26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift in Sources */,
 				789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */,
+				FD7E976626F33D1100751A18 /* Extension+UITableView.swift in Sources */,
+				FD7E976126F326FF00751A18 /* NadiaDefaultTableViewCell.swift in Sources */,
 				FD7E975326EDEA6800751A18 /* NadiaCertificateTableViewCell.swift in Sources */,
 				789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */,
+				FD7E976426F33C9200751A18 /* Extension+UIView.swift in Sources */,
 				FD7E974F26EDE92300751A18 /* NadiaWorkExperienceCell.swift in Sources */,
 				789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */,
 				FD7E975B26EF35A000751A18 /* NadiaDetailedImageViewController.swift in Sources */,

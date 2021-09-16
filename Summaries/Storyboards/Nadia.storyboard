@@ -208,15 +208,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="projectCell" rowHeight="77" id="LbY-qJ-GZ8" customClass="NadiaProjectTableViewCell" customModule="Summaries" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="49.5" width="320" height="77"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="projectCell" id="LbY-qJ-GZ8" customClass="NadiaProjectTableViewCell" customModule="Summaries" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="49.5" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LbY-qJ-GZ8" id="MBR-uZ-5O7">
-                                    <rect key="frame" x="0.0" y="0.0" width="294.5" height="77"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="294.5" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="p4d-SF-bth">
-                                            <rect key="frame" x="20" y="5" width="254.5" height="67"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="p4d-SF-bth">
+                                            <rect key="frame" x="20" y="5" width="254.5" height="90"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o9n-zn-3Ug">
                                                     <rect key="frame" x="0.0" y="0.0" width="254.5" height="27"/>
@@ -225,7 +225,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LGI-45-ia5">
-                                                    <rect key="frame" x="0.0" y="42" width="254.5" height="25"/>
+                                                    <rect key="frame" x="0.0" y="65" width="254.5" height="25"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Git Link" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="se9-M0-n4k" userLabel="git link">
                                                             <rect key="frame" x="0.0" y="0.0" width="127.5" height="25"/>
@@ -258,15 +258,15 @@
                                     <segue destination="ucb-rQ-VdK" kind="show" identifier="projectDetailed" id="RSk-Ke-b9Y"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="certificateCell" rowHeight="76" id="1KN-0w-LOc" customClass="NadiaCertificateTableViewCell" customModule="Summaries" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="126.5" width="320" height="76"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="certificateCell" id="1KN-0w-LOc" customClass="NadiaCertificateTableViewCell" customModule="Summaries" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="149.5" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1KN-0w-LOc" id="ApJ-XW-4Ck">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Lhx-ZS-QpM">
-                                            <rect key="frame" x="20" y="5" width="280" height="66"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Lhx-ZS-QpM">
+                                            <rect key="frame" x="20" y="5" width="280" height="90"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Zga-N6-qlm">
                                                     <rect key="frame" x="0.0" y="0.0" width="280" height="28.5"/>
@@ -286,7 +286,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvg-gC-mvJ">
-                                                    <rect key="frame" x="0.0" y="39" width="280" height="27"/>
+                                                    <rect key="frame" x="0.0" y="63" width="280" height="27"/>
                                                     <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -307,15 +307,15 @@
                                     <outlet property="linkLabel" destination="Qvg-gC-mvJ" id="eWf-2G-fHi"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="educationCell" rowHeight="150" id="tBi-aY-fgo" customClass="NadiaEducationTableViewCell" customModule="Summaries" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="202.5" width="320" height="150"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="educationCell" id="tBi-aY-fgo" customClass="NadiaEducationTableViewCell" customModule="Summaries" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="249.5" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tBi-aY-fgo" id="uQI-Wb-Lth">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="FvE-aB-qcV">
-                                            <rect key="frame" x="20" y="5" width="280" height="140"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FvE-aB-qcV">
+                                            <rect key="frame" x="20" y="5" width="280" height="90"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tC2-JO-9DQ">
                                                     <rect key="frame" x="0.0" y="0.0" width="280" height="57"/>
@@ -335,7 +335,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="HhA-eR-gcZ">
-                                                    <rect key="frame" x="0.0" y="113" width="280" height="27"/>
+                                                    <rect key="frame" x="0.0" y="63" width="280" height="27"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="period" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-Mt-DAY">
                                                             <rect key="frame" x="0.0" y="0.0" width="94.5" height="27"/>
@@ -367,15 +367,15 @@
                                     <outlet property="specializationLabel" destination="wA4-lV-WHi" id="iVJ-ls-jee"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="workCell" rowHeight="152" id="y5r-ru-pOh" customClass="NadiaWorkExperienceCell" customModule="Summaries" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="352.5" width="320" height="152"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="workCell" id="y5r-ru-pOh" customClass="NadiaWorkExperienceCell" customModule="Summaries" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="349.5" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y5r-ru-pOh" id="C51-lg-t8c">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vfo-DZ-eod">
-                                            <rect key="frame" x="20" y="5" width="280" height="142"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Vfo-DZ-eod">
+                                            <rect key="frame" x="20" y="5" width="280" height="90"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qm2-6k-LSS">
                                                     <rect key="frame" x="0.0" y="0.0" width="280" height="27"/>
@@ -395,7 +395,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LAf-cP-g6F">
-                                                    <rect key="frame" x="0.0" y="27" width="280" height="115"/>
+                                                    <rect key="frame" x="0.0" y="33" width="280" height="57"/>
                                                     <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -414,6 +414,45 @@
                                     <outlet property="descriptionLabel" destination="LAf-cP-g6F" id="Tb6-XI-wVm"/>
                                     <outlet property="periodLabel" destination="5dR-6n-0K1" id="iPj-L6-EpW"/>
                                     <outlet property="positionLabel" destination="7IS-ou-GxD" id="dgc-w3-E0o"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="defaultResumeCell" id="JNr-KN-LjQ" customClass="NadiaDefaultTableViewCell" customModule="Summaries" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="449.5" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JNr-KN-LjQ" id="pYK-gZ-Hba">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xx6-RQ-tcN">
+                                            <rect key="frame" x="36" y="16" width="248" height="68"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mPj-NK-sLQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="248" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ng6-2p-tBX">
+                                                    <rect key="frame" x="0.0" y="41" width="248" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="xx6-RQ-tcN" secondAttribute="bottom" constant="5" id="J9I-yk-mmm"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xx6-RQ-tcN" secondAttribute="trailing" constant="20" id="POK-Ie-Tap"/>
+                                        <constraint firstItem="xx6-RQ-tcN" firstAttribute="leading" secondItem="pYK-gZ-Hba" secondAttribute="leadingMargin" constant="20" id="VlZ-9B-nPE"/>
+                                        <constraint firstItem="xx6-RQ-tcN" firstAttribute="top" secondItem="pYK-gZ-Hba" secondAttribute="topMargin" constant="5" id="dgx-Nz-rJv"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="additionalLabel" destination="Ng6-2p-tBX" id="IkA-N8-X2M"/>
+                                    <outlet property="mainLabel" destination="mPj-NK-sLQ" id="FCa-ja-TcP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -468,13 +507,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="dH3-rO-FKP"/>
-                    <connections>
-                        <segue destination="uFV-Wp-FJx" kind="show" identifier="detailedInfoN" id="gqD-Hb-meY"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JaR-px-ZQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5424.375" y="227.11267605633802"/>
+            <point key="canvasLocation" x="5396" y="590"/>
         </scene>
         <!--Nadia Root Profile-->
         <scene sceneID="Cuj-GB-kOg">
@@ -507,28 +543,44 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npa-ja-dWM">
-                                <rect key="frame" x="80" y="363.5" width="160" height="42"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="18"/>
-                                <state key="normal" title="More Info">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Aq0-Ii-Jsg" kind="show" id="gdv-dZ-yGU"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="8Jb-XK-01t">
+                                <rect key="frame" x="16" y="363.5" width="288" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npa-ja-dWM">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="42"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="18"/>
+                                        <state key="normal" title="One Page">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="detailedButtonPressed" destination="5rt-WO-zVT" eventType="touchUpInside" id="Mfz-xB-00y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqD-bh-ipC">
+                                        <rect key="frame" x="168" y="0.0" width="120" height="42"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="18"/>
+                                        <state key="normal" title="Detailed">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onePageButtonPressed" destination="5rt-WO-zVT" eventType="touchUpInside" id="eFP-68-Zdj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0fT-41-Q3R"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="npa-ja-dWM" firstAttribute="width" secondItem="NDX-x8-lqh" secondAttribute="width" id="1ud-0f-nd4"/>
+                            <constraint firstItem="0fT-41-Q3R" firstAttribute="trailing" secondItem="8Jb-XK-01t" secondAttribute="trailing" constant="16" id="56s-4a-LNS"/>
                             <constraint firstItem="xec-zM-wh4" firstAttribute="top" secondItem="NDX-x8-lqh" secondAttribute="bottom" constant="16" id="FCs-U8-mQm"/>
                             <constraint firstItem="xec-zM-wh4" firstAttribute="leading" secondItem="0fT-41-Q3R" secondAttribute="leading" constant="16" id="FZ2-Af-wFi"/>
                             <constraint firstItem="NDX-x8-lqh" firstAttribute="centerX" secondItem="7rA-kN-s7a" secondAttribute="centerX" id="G9e-F6-N98"/>
                             <constraint firstItem="NDX-x8-lqh" firstAttribute="top" secondItem="0fT-41-Q3R" secondAttribute="top" constant="32" id="NhJ-Gl-drw"/>
-                            <constraint firstItem="npa-ja-dWM" firstAttribute="top" secondItem="xec-zM-wh4" secondAttribute="bottom" constant="32" id="Xto-lr-0VC"/>
-                            <constraint firstItem="npa-ja-dWM" firstAttribute="centerX" secondItem="7rA-kN-s7a" secondAttribute="centerX" id="fbc-dy-Veu"/>
+                            <constraint firstItem="8Jb-XK-01t" firstAttribute="top" secondItem="xec-zM-wh4" secondAttribute="bottom" constant="32" id="box-6f-oYc"/>
+                            <constraint firstItem="8Jb-XK-01t" firstAttribute="leading" secondItem="0fT-41-Q3R" secondAttribute="leading" constant="16" id="ffb-Yv-1Ln"/>
                             <constraint firstItem="0fT-41-Q3R" firstAttribute="trailing" secondItem="xec-zM-wh4" secondAttribute="trailing" constant="16" id="iYQ-vl-Ffs"/>
                             <constraint firstItem="NDX-x8-lqh" firstAttribute="height" secondItem="7rA-kN-s7a" secondAttribute="height" multiplier="0.28125" id="wjI-gy-lmH"/>
                         </constraints>
@@ -537,9 +589,12 @@
                     <navigationItem key="navigationItem" title="Nadzeya Shpakouskaya" largeTitleDisplayMode="always" id="jUH-kh-ONZ"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="GtP-0U-Uvb" id="3Qi-yu-dtN"/>
-                        <outlet property="moreInfoButton" destination="npa-ja-dWM" id="kbM-na-8si"/>
+                        <outlet property="detailedFormButton" destination="PqD-bh-ipC" id="kR7-YF-Zy4"/>
+                        <outlet property="onePageButton" destination="npa-ja-dWM" id="kbM-na-8si"/>
                         <outlet property="photoImageView" destination="NDX-x8-lqh" id="vg3-Je-Agh"/>
                         <outlet property="titleLabel" destination="nlQ-IA-vFX" id="WV3-BA-B0E"/>
+                        <segue destination="Aq0-Ii-Jsg" kind="show" identifier="detailedFormSegue" id="8i4-Lm-nku"/>
+                        <segue destination="Z8T-ou-sYT" kind="show" identifier="shortFormSegue" id="LQm-D4-Oig"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AI4-rN-9ct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -583,6 +638,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7e-HW-UZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3594.375" y="227.11267605633802"/>
+        </scene>
+        <!--Nadia Short Form Resume View Controller-->
+        <scene sceneID="R2q-ZI-oUX">
+            <objects>
+                <tableViewController id="Z8T-ou-sYT" customClass="NadiaShortFormResumeViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="la5-F1-EI7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="shortFormCell" id="Y6J-Jx-NEi">
+                                <rect key="frame" x="0.0" y="24.5" width="320" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y6J-Jx-NEi" id="rcP-gZ-McQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="294.5" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Z8T-ou-sYT" id="zXe-Ze-zoi"/>
+                            <outlet property="delegate" destination="Z8T-ou-sYT" id="IJM-H8-D5S"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qQO-hY-JWr"/>
+                    <connections>
+                        <segue destination="uFV-Wp-FJx" kind="show" identifier="detailedInformation" id="39k-qJ-yWF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9T-Ay-f5C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5378" y="-236"/>
         </scene>
     </scenes>
     <resources>

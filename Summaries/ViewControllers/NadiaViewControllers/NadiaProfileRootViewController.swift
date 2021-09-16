@@ -12,7 +12,8 @@ class NadiaProfileRootViewController: UIViewController {
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var moreInfoButton: UIButton!
+    @IBOutlet weak var onePageButton: UIButton!
+    @IBOutlet weak var detailedFormButton: UIButton!
     
     // MARK: - Private Properties
     private let person = PersonN.nadia
@@ -22,15 +23,35 @@ class NadiaProfileRootViewController: UIViewController {
         super.viewDidLoad()
         setUpImage()
         setUpLabels()
-        setUpButton()
+        setUpButtons()
         setUpView()
     }
     
-     // MARK: - Navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let resumeVC = segue.destination as? NadiaMainResumeViewController else { return }
-        resumeVC.person = person
-     }
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "shortFormSegue":
+            if let resumeVC = segue.destination as? NadiaShortFormResumeViewController {
+                resumeVC.person = person
+            }
+        case "detailedFormSegue":
+            if let detailedVC = segue.destination as? NadiaMainResumeViewController {
+                detailedVC.person = person
+            }
+        default: return
+        }
+        
+    }
+    
+    // MARK: - IBAction
+    @IBAction func detailedButtonPressed() {
+        performSegue(withIdentifier: "detailedFormSegue", sender: nil)
+    }
+    
+    @IBAction func onePageButtonPressed() {
+        performSegue(withIdentifier: "shortFormSegue", sender: nil)
+    }
+    
     
     // MARK: - Private methods
     private func setUpLabels() {
@@ -38,8 +59,9 @@ class NadiaProfileRootViewController: UIViewController {
         descriptionLabel.text = person.summary
     }
     
-    private func setUpButton() {
-        moreInfoButton.layer.cornerRadius = 5
+    private func setUpButtons() {
+        onePageButton.layer.cornerRadius = 5
+        detailedFormButton.layer.cornerRadius = 5
     }
     
     private func setUpImage() {
@@ -58,14 +80,3 @@ class NadiaProfileRootViewController: UIViewController {
     }  
 }
 
-extension UIView {
-    func addVerticalGradientLayer(topColor: UIColor, middleColor: UIColor, bottomColor: UIColor) {
-        let gradient = CAGradientLayer()
-        gradient.frame = bounds
-        gradient.colors = [topColor.cgColor, middleColor.cgColor, bottomColor.cgColor]
-        gradient.locations = [0.0, 0.5, 1.0]
-        gradient.startPoint = CGPoint(x: 0, y: 0)
-        gradient.endPoint = CGPoint(x: 0, y: 1)
-        layer.insertSublayer(gradient, at: 0)
-    }
-}

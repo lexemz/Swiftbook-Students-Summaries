@@ -71,41 +71,32 @@ class NadiaMainResumeViewController: UITableViewController {
                 content.secondaryText = person.contactInfo.email
             default: break
             }
-            cell.accessoryType = .none
         case 1:
             guard let work = person.workPlaces?[indexPath.row] else { break }
             content.text = "\(work.company)"
             content.textProperties.alignment = .justified
             content.secondaryText = "\(work.position)"
-            cell.accessoryType = .disclosureIndicator
-            
         case 2:
             let skills = person.skills.joined(separator: ", ")
             content.text = skills
-            cell.accessoryType = .none
         case 3:
             guard let education = person.education?[indexPath.row] else { break }
             content.text = education.name
             content.secondaryText = "\(education.levelDegree.rawValue), \(education.specialization)"
-            cell.accessoryType = .disclosureIndicator
         case 4:
             guard let certificate = person.certificates?[indexPath.row] else { break }
             content.text = certificate.title
             content.secondaryText = certificate.dateOfIssue
-            cell.accessoryType = .disclosureIndicator
         case 5:
             guard let project = person.projects?[indexPath.row] else { break }
             content.text = project.title
             content.secondaryText = project.description
-            cell.accessoryType = .disclosureIndicator
         case 6:
             let info = person.additionalInfo[indexPath.row]
             content.text = info.title
             content.secondaryText  = info.description
-            cell.accessoryType = .none
         default:
             content.text = "There is no any information."
-            cell.accessoryType = .none
         }
         
         content.textProperties.font = UIFont(name: "MuktaMahee Bold", size: 17)
@@ -155,28 +146,8 @@ class NadiaMainResumeViewController: UITableViewController {
         header.backgroundConfiguration = backgroundConfig
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.section {
-        case 0, 2, 6: return
-        case 1: selectedDetailedInfo = .work
-        case 3: selectedDetailedInfo = .education
-        case 4: selectedDetailedInfo = .certificate
-        case 5: selectedDetailedInfo = .project
-        default: return
-        }
-        performSegue(withIdentifier: "detailedInfoN", sender: (person, selectedDetailedInfo))
-    }
-    
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         48
     }
-    
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let detailedVC = segue.destination as? NadiaDetailedInfoViewController else { return }
-        detailedVC.person = person
-        detailedVC.typeInfo = selectedDetailedInfo
-    }
-    
-    
+
 }

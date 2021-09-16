@@ -226,8 +226,11 @@ enum LanguageLevelN: String {
 }
 
 enum DetailedInfoN {
+    case personalInfo
+    case additionalInfo
     case work
     case certificate
     case education
     case project
+    case skills
 }
