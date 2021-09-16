@@ -8,6 +8,9 @@
 import UIKit
 
 class ProjectListDNViewController: UITableViewController {
+    
+    // MARK: - Transfer data properties
+    var projects = Person.getPerson().profession.projects // TODO: Заменить на переданные данные с предыдущего экрана
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +27,16 @@ class ProjectListDNViewController: UITableViewController {
         projects.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "projectDN", for: indexPath)
 
-        // Configure the cell...
+        var content = cell.defaultContentConfiguration()
+        let project = projects[indexPath.row]
+        
+        content.text = project.projectName
+        content.secondaryText = project.projectDescription
+        
+        cell.contentConfiguration = content
 
         return cell
     }
