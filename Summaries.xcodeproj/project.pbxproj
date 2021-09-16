@@ -57,6 +57,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0D826326F38EDC00D1C551 /* ModelsDN */ = {
+			isa = PBXGroup;
+			children = (
+				2CBC030F26EF646F005F2BE6 /* PersonDN.swift */,
+				2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */,
+				2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */,
+			);
+			path = ModelsDN;
+			sourceTree = "<group>";
+		};
+		2C0D826426F38F2300D1C551 /* DmitriyViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */,
+				2C0FEF9426F0B2DC0098EDA9 /* DetailInfoDNViewController.swift */,
+				2C436F6D26F34BB80046F932 /* ProjectListDNViewController.swift */,
+			);
+			path = DmitriyViewControllers;
+			sourceTree = "<group>";
+		};
 		789DBF2626EAA4C3005F86D8 = {
 			isa = PBXGroup;
 			children = (
@@ -76,9 +96,7 @@
 		789DBF3126EAA4C3005F86D8 /* Summaries */ = {
 			isa = PBXGroup;
 			children = (
-				2CBC030F26EF646F005F2BE6 /* PersonDN.swift */,
-				2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */,
-				2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */,
+				2C0D826326F38EDC00D1C551 /* ModelsDN */,
 				789DBF4726EAA600005F86D8 /* App */,
 				789DBF4826EAA721005F86D8 /* ViewControllers */,
 				789DBF4626EAA5E8005F86D8 /* Storyboards */,
@@ -113,9 +131,7 @@
 				789DBF4926EAA909005F86D8 /* TabBarController.swift */,
 				789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */,
 				789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */,
-				789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */,
-				2C0FEF9426F0B2DC0098EDA9 /* DetailInfoDNViewController.swift */,
-				2C436F6D26F34BB80046F932 /* ProjectListDNViewController.swift */,
+				2C0D826426F38F2300D1C551 /* DmitriyViewControllers */,
 				789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */,
 			);
 			path = ViewControllers;
