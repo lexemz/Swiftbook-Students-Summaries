@@ -14,6 +14,9 @@ class ProjectListDNViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Default setup
+        setupTableView()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -96,4 +99,12 @@ class ProjectListDNViewController: UITableViewController {
     }
     */
 
+}
+
+// MARK: - Default setup methods
+extension ProjectListDNViewController {
+    private func setupTableView() {
+        title = "Проeкты"
+        tableView.tableFooterView = UIView()
+    }
 }
