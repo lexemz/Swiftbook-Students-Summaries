@@ -40,11 +40,6 @@ class DetailInfoDNViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-//    @IBAction func testLink() {
-//        if let url = URL(string: person.profession.projects[0].linkGitHub!) {
-//            UIApplication.shared.open(url)
-//        }
-//    }
 }
 
 // MARK: - Default setup methods
