@@ -19,18 +19,16 @@ class NadiaShortFormResumeViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.title = person.fullname
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         selectedDetailedInfo = nil
     }
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 7
     }
-
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "shortFormCell", for: indexPath)
         var contentConfig = cell.defaultContentConfiguration()
@@ -51,7 +49,7 @@ class NadiaShortFormResumeViewController: UITableViewController {
         cell.backgroundColor = .systemGray6
         return cell
     }
-
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0: selectedDetailedInfo = .personalInfo
@@ -72,5 +70,4 @@ class NadiaShortFormResumeViewController: UITableViewController {
         detailedVC.person = person
         detailedVC.typeInfo = selectedDetailedInfo
     }
-
 }

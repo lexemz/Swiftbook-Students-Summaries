@@ -21,7 +21,6 @@ class NadiaMainResumeViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 7
     }
@@ -39,7 +38,7 @@ class NadiaMainResumeViewController: UITableViewController {
         }
     }
     
-    
+    // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mainNadiaResumeCell", for: indexPath)
         
@@ -149,5 +148,4 @@ class NadiaMainResumeViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         48
     }
-
 }

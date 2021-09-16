@@ -8,8 +8,9 @@
 import UIKit
 
 extension UITableView {
+    // Remove empty rows at the end in TableView
     override open func didMoveToSuperview() {
         super.didMoveToSuperview()
-        self.tableFooterView = UIView()
+        tableFooterView = UIView()
     }
 }

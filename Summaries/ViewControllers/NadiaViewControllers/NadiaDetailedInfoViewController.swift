@@ -17,7 +17,7 @@ class NadiaDetailedInfoViewController: UITableViewController {
         super.viewDidLoad()
         setUpTitle()
     }
- 
+    
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         var numberOfRows = 1
@@ -103,10 +103,10 @@ class NadiaDetailedInfoViewController: UITableViewController {
     }
     
     // MARK: - Table view delegate
-    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         tableView.estimatedRowHeight
     }
+    
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         40
     }
