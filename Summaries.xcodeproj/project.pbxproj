@@ -17,6 +17,7 @@
 		789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */; };
 		789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */; };
 		789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */; };
+		EA84C7C926F3B9B000C94A89 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7C826F3B9B000C94A89 /* FirstViewController.swift */; };
 		EA8D44EE26F272C800A3D591 /* Alex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8D44ED26F272C800A3D591 /* Alex.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmitryProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaProfileRootViewController.swift; sourceTree = "<group>"; };
+		EA84C7C826F3B9B000C94A89 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		EA8D44ED26F272C800A3D591 /* Alex.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alex.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,8 +104,17 @@
 				789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */,
 				789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */,
 				789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */,
+				EA84C7CA26F3B9B500C94A89 /* Alex`s VCs */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EA84C7CA26F3B9B500C94A89 /* Alex`s VCs */ = {
+			isa = PBXGroup;
+			children = (
+				EA84C7C826F3B9B000C94A89 /* FirstViewController.swift */,
+			);
+			path = "Alex`s VCs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 				789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */,
 				789DBF4A26EAA909005F86D8 /* TabBarController.swift in Sources */,
 				789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */,
+				EA84C7C926F3B9B000C94A89 /* FirstViewController.swift in Sources */,
 				789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */,
 				789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */,
 				789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */,
