@@ -10,8 +10,9 @@ import UIKit
 class ProjectListDNViewController: UITableViewController {
     
     // MARK: - Transfer data properties
-    var projects = Person.getPerson().profession.projects // TODO: Заменить на переданные данные с предыдущего экрана
+    var projects: [Project] = []
 
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         

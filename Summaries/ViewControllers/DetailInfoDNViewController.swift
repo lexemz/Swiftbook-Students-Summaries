@@ -30,16 +30,11 @@ class DetailInfoDNViewController: UIViewController {
         setupProjectsButton()
     }
     
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let projectVC = segue.destination as? ProjectListDNViewController else { return }
+        projectVC.projects = person.profession.projects
     }
-    */
 }
 
 // MARK: - Default setup methods
@@ -57,7 +52,6 @@ extension DetailInfoDNViewController {
     }
     
     private func setupProjectsButton() {
-        projectsButton.isHidden = true // TODO: убрать строчку при добавлении таблицы с просмотром проектов
         projectsButton.layer.cornerRadius = 10
     }
 }
