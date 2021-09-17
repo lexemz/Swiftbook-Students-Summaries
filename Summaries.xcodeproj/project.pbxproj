@@ -85,16 +85,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C0D826326F38EDC00D1C551 /* ModelsDN */ = {
-			isa = PBXGroup;
-			children = (
-				2CBC030F26EF646F005F2BE6 /* PersonDN.swift */,
-				2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */,
-				2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */,
-			);
-			path = ModelsDN;
-			sourceTree = "<group>";
-		};
 		2C0D826426F38F2300D1C551 /* DmitriyViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +114,6 @@
 		789DBF3126EAA4C3005F86D8 /* Summaries */ = {
 			isa = PBXGroup;
 			children = (
-				2C0D826326F38EDC00D1C551 /* ModelsDN */,
 				789DBF4726EAA600005F86D8 /* App */,
 				789DBF4826EAA721005F86D8 /* ViewControllers */,
 				FD7E976726F33D6500751A18 /* Extensions */,
@@ -197,6 +186,9 @@
 		FD7E976226F33BB300751A18 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2CBC030F26EF646F005F2BE6 /* PersonDN.swift */,
+				2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */,
+				2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */,
 				FD7E974A26ECA5D700751A18 /* PersonN.swift */,
 			);
 			path = Models;
