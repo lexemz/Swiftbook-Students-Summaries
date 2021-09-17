@@ -11,8 +11,18 @@ class IgorProfileRootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.systemPink
+//        view.backgroundColor = UIColor.systemPink
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.topViewController?.title = "Igor"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        navigationController?.topViewController?.title = nil
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
 

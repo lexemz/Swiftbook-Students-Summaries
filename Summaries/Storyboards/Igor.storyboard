@@ -15,8 +15,20 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yKm-tV-Cep">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yKm-tV-Cep" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="coB-Fz-Hpl"/>
+                            <constraint firstItem="yKm-tV-Cep" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="oPU-sd-7Kh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="yKm-tV-Cep" secondAttribute="bottom" id="rfk-Dm-akP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yKm-tV-Cep" secondAttribute="trailing" id="sg0-aj-82E"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Igor" image="person" catalog="system" selectedImage="person.fill" id="oQI-sg-HPa"/>
                     <navigationItem key="navigationItem" id="L93-fO-Yfp"/>
