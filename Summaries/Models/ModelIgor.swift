@@ -47,7 +47,7 @@ struct PersonI {
         ]
         
         let contacts = [
-            Contact(contactType: "Telegram", id: "lexemz", link: "link")
+            Contact(contactType: "Telegram", id: "/lexemz", link: "link")
         ]
         
         
