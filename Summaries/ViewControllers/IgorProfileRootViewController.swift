@@ -70,6 +70,7 @@ extension IgorProfileRootViewController: UITableViewDelegate, UITableViewDataSou
         switch indexPath.section {
         case 0:
             cell.selectionStyle = .none
+            cell.accessoryType = .none
             if indexPath.row == 0 {
                 content.text = "Age: \(userData.age)"
             } else {
@@ -99,9 +100,9 @@ extension IgorProfileRootViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 2 {
+        if indexPath.section == 1 {
             let contacts = userData.contacts
-            guard let url = URL(string: contacts[indexPath.row].link) else { return }
+            guard let url = URL(string: "https://" + contacts[indexPath.row].link) else { return }
             UIApplication.shared.open(url)
         } else if indexPath.section == 4 {
             let projects = userData.projects
