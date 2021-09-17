@@ -78,3 +78,9 @@ struct Project {
     let descrition: String
     let link: String
 }
+
+struct Contact {
+    let contactType: String
+    let id: String
+    let link: String
+}
