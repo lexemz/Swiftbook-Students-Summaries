@@ -30,6 +30,11 @@ class DetailInfoDNViewController: UIViewController {
         setupProjectsButton()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        resetTitleVC()
+    }
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let projectVC = segue.destination as? ProjectListDNViewController else { return }
@@ -42,6 +47,10 @@ extension DetailInfoDNViewController {
     private func setupTitleVC() {
         navigationController?.navigationBar.prefersLargeTitles = true
         title = person.fullName
+    }
+    
+    private func resetTitleVC() {
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     private func setupLabels() {

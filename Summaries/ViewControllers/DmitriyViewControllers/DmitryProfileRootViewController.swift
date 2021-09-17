@@ -21,7 +21,6 @@ class DmitryProfileRootViewController: UIViewController {
     // MARK: - Private properties
     private let person = PersonDN.getPerson()
     
-
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,17 +30,11 @@ class DmitryProfileRootViewController: UIViewController {
         setupMoreInfoButton()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setupTitle()
-    }
-    
     // Использую этот метод, так как без него рамка обрезается не полностью и круга не получается. При запуске размеры высчитываются в зависимости от того, какой экран был выбран в сториборде.
     override func viewWillLayoutSubviews() {
         setupPhotoImageView()
     }
     
-
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailVC = segue.destination as? DetailInfoDNViewController else { return }
@@ -51,9 +44,6 @@ class DmitryProfileRootViewController: UIViewController {
 
 // MARK: - Default setup methods
 extension DmitryProfileRootViewController {
-    private func setupTitle() {
-        navigationController?.navigationBar.prefersLargeTitles = false
-    }
     
     private func setupPhotoImageView() {
         photoImageView.image = UIImage(named: person.photo)
