@@ -36,20 +36,48 @@ struct PersonI {
         let projects: [Project] = [
             Project(
                 title: "PersonalityQuiz",
-                descrition: "",
+                descrition: "Проект - персональный опросник",
                 link: "https://github.com/lexemz/PersonalityQuiz.git"
             ),
-            
             Project(
                 title: "Contacts",
-                descrition: "",
-                link: "https://github.com/lexemz/Contacts.git")
+                descrition: "Приложение - автоматически генерирующийся список контактов",
+                link: "https://github.com/lexemz/Contacts.git"
+            ),
+            Project(
+                title: "ColorizeSuperview",
+                descrition: "Приложение для смены цвета главного экрана через делегирование",
+                link: "https://github.com/lexemz/ColorizeSuperview.git"
+            ),
+            Project(
+                title: "Log-in-screen",
+                descrition: "Экран авторизации с анкетой разработчика",
+                link: "https://github.com/lexemz/Log-in-screen.git"
+            ),
+            Project(
+                title: "Codewars-solutions",
+                descrition: "Задачки с codewars",
+                link: "https://github.com/lexemz/codewars-solutions.git"
+            )
         ]
         
         let contacts = [
-            Contact(contactType: "Telegram", id: "/lexemz", link: "link")
+            Contact(
+                contactType: "Telegram",
+                id: "@lexemz",
+                link: "t.me/lexemz"
+            ),
+            Contact(
+                contactType: "VK",
+                id: "/lexemz",
+                link: "vk.com/lexemz"
+            ),
+            Contact(
+                contactType: "GitHub",
+                id: "lexemz",
+                link: "github.com/lexemz"
+            )
         ]
-        
         
         return PersonI(
             name: "Igor",
