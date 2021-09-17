@@ -24,21 +24,15 @@
             </objects>
             <point key="canvasLocation" x="-1329" y="240"/>
         </scene>
-        <!--Dmitry Root Profile-->
-        <scene sceneID="JYq-0k-FAa">
+        <!--dmitriyRootProfile-->
+        <scene sceneID="VU6-U1-AQk">
             <objects>
-                <viewController id="fCK-Yx-iFf" userLabel="Dmitry Root Profile" customClass="DmitryProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="F6Z-m8-bKH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="g4E-eU-iWP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Dmitry" image="person" catalog="system" selectedImage="person.fill" id="ard-J5-Zq6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hOu-fC-P84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Dmitriy" referencedIdentifier="dmitriyRootProfile" id="YRV-Oy-HPP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="SHo-yo-vzw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hk1-Bb-8Pn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-468" y="240"/>
+            <point key="canvasLocation" x="-497" y="-83"/>
         </scene>
         <!--Alex Root Profile-->
         <scene sceneID="0dH-Df-2SF">
@@ -85,7 +79,7 @@
                     <connections>
                         <segue destination="Tqr-t7-74A" kind="relationship" relationship="viewControllers" id="L16-wa-BLv"/>
                         <segue destination="JGT-gj-NFc" kind="relationship" relationship="viewControllers" id="vZd-Zg-Oan"/>
-                        <segue destination="fCK-Yx-iFf" kind="relationship" relationship="viewControllers" id="V82-70-EvR"/>
+                        <segue destination="YRV-Oy-HPP" kind="relationship" relationship="viewControllers" id="2nq-rE-taN"/>
                         <segue destination="eBc-cx-s6Z" kind="relationship" relationship="viewControllers" id="pPK-pr-NYy"/>
                     </connections>
                 </tabBarController>
