@@ -54,6 +54,5 @@ class ProjectListDNViewController: UITableViewController {
 extension ProjectListDNViewController {
     private func setupTableView() {
         title = "Проeкты"
-        tableView.tableFooterView = UIView()
     }
 }
