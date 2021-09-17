@@ -10,7 +10,8 @@ struct PersonI {
     let surname: String
     let age: Int
     let city: String
-    let contacts: String
+    
+    let contacts: [Contact]
     
     var hobbies: [Hobbie]
     var skills: [Skill]
@@ -45,12 +46,17 @@ struct PersonI {
                 link: "https://github.com/lexemz/Contacts.git")
         ]
         
+        let contacts = [
+            Contact(contactType: "Telegram", id: "lexemz", link: "link")
+        ]
+        
+        
         return PersonI(
             name: "Igor",
             surname: "Buzykin",
             age: 22,
             city: "Moscow",
-            contacts: "@lexemz",
+            contacts: contacts,
             hobbies: hobbies,
             skills: skills,
             projects: projects
