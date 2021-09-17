@@ -29,8 +29,8 @@
 		FD7E975D26F0653C00751A18 /* Nadia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7E975C26F0653C00751A18 /* Nadia.storyboard */; };
 		FD7E975F26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975E26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift */; };
 		FD7E976126F326FF00751A18 /* NadiaDefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E976026F326FF00751A18 /* NadiaDefaultTableViewCell.swift */; };
-		FD7E976426F33C9200751A18 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E976326F33C9200751A18 /* Extension+UIView.swift */; };
-		FD7E976626F33D1100751A18 /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E976526F33D1100751A18 /* Extension+UITableView.swift */; };
+		FD7E976426F33C9200751A18 /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E976326F33C9200751A18 /* Extension_UIView.swift */; };
+		FD7E976626F33D1100751A18 /* Extension_UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E976526F33D1100751A18 /* Extension_UITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +58,8 @@
 		FD7E975C26F0653C00751A18 /* Nadia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Nadia.storyboard; sourceTree = "<group>"; };
 		FD7E975E26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaShortFormResumeViewController.swift; sourceTree = "<group>"; };
 		FD7E976026F326FF00751A18 /* NadiaDefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaDefaultTableViewCell.swift; sourceTree = "<group>"; };
-		FD7E976326F33C9200751A18 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
-		FD7E976526F33D1100751A18 /* Extension+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
+		FD7E976326F33C9200751A18 /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
+		FD7E976526F33D1100751A18 /* Extension_UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UITableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,8 +171,8 @@
 		FD7E976726F33D6500751A18 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FD7E976326F33C9200751A18 /* Extension+UIView.swift */,
-				FD7E976526F33D1100751A18 /* Extension+UITableView.swift */,
+				FD7E976326F33C9200751A18 /* Extension_UIView.swift */,
+				FD7E976526F33D1100751A18 /* Extension_UITableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -259,11 +259,11 @@
 				FD7E975126EDEA0600751A18 /* NadiaEducationTableViewCell.swift in Sources */,
 				FD7E975F26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift in Sources */,
 				789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */,
-				FD7E976626F33D1100751A18 /* Extension+UITableView.swift in Sources */,
+				FD7E976626F33D1100751A18 /* Extension_UITableView.swift in Sources */,
 				FD7E976126F326FF00751A18 /* NadiaDefaultTableViewCell.swift in Sources */,
 				FD7E975326EDEA6800751A18 /* NadiaCertificateTableViewCell.swift in Sources */,
 				789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */,
-				FD7E976426F33C9200751A18 /* Extension+UIView.swift in Sources */,
+				FD7E976426F33C9200751A18 /* Extension_UIView.swift in Sources */,
 				FD7E974F26EDE92300751A18 /* NadiaWorkExperienceCell.swift in Sources */,
 				789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */,
 				FD7E975B26EF35A000751A18 /* NadiaDetailedImageViewController.swift in Sources */,

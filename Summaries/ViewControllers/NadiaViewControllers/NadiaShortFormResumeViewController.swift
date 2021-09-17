@@ -19,14 +19,10 @@ class NadiaShortFormResumeViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.title = person.fullname
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        selectedDetailedInfo = nil
-    }
+
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        7
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
