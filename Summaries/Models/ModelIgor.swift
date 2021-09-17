@@ -50,7 +50,7 @@ struct PersonI {
             surname: "Buzykin",
             age: 22,
             city: "Moscow",
-            contacts: "Telegram: @lexemz",
+            contacts: "@lexemz",
             hobbies: hobbies,
             skills: skills,
             projects: projects
