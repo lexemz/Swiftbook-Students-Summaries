@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0FEF9526F0B2DC0098EDA9 /* DetailInfoDNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0FEF9426F0B2DC0098EDA9 /* DetailInfoDNViewController.swift */; };
+		2C0FEF9926F0C9A90098EDA9 /* ProjectDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */; };
+		2C436F6E26F34BB80046F932 /* ProjectListDNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C436F6D26F34BB80046F932 /* ProjectListDNViewController.swift */; };
+		2C91B6A726EF9255001A46C9 /* Dmitriy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C91B6A626EF9255001A46C9 /* Dmitriy.storyboard */; };
+		2CBC031026EF646F005F2BE6 /* PersonDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC030F26EF646F005F2BE6 /* PersonDN.swift */; };
+		2CBC031226EF6CD1005F2BE6 /* ProfessionDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */; };
 		786EE0FB26F4D19500E9688E /* ModelIgor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786EE0FA26F4D19500E9688E /* ModelIgor.swift */; };
 		7873F63726F0D90F005BA974 /* Igor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7873F63626F0D90F005BA974 /* Igor.storyboard */; };
 		789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF3226EAA4C3005F86D8 /* AppDelegate.swift */; };
@@ -38,6 +44,12 @@
 /* Begin PBXFileReference section */
 		786EE0FA26F4D19500E9688E /* ModelIgor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelIgor.swift; sourceTree = "<group>"; };
 		7873F63626F0D90F005BA974 /* Igor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Igor.storyboard; sourceTree = "<group>"; };
+		2C0FEF9426F0B2DC0098EDA9 /* DetailInfoDNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoDNViewController.swift; sourceTree = "<group>"; };
+		2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDN.swift; sourceTree = "<group>"; };
+		2C436F6D26F34BB80046F932 /* ProjectListDNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListDNViewController.swift; sourceTree = "<group>"; };
+		2C91B6A626EF9255001A46C9 /* Dmitriy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dmitriy.storyboard; sourceTree = "<group>"; };
+		2CBC030F26EF646F005F2BE6 /* PersonDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDN.swift; sourceTree = "<group>"; };
+		2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionDN.swift; sourceTree = "<group>"; };
 		789DBF2F26EAA4C3005F86D8 /* Summaries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Summaries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		789DBF3226EAA4C3005F86D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		789DBF3426EAA4C3005F86D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0D826426F38F2300D1C551 /* DmitriyViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */,
+				2C0FEF9426F0B2DC0098EDA9 /* DetailInfoDNViewController.swift */,
+				2C436F6D26F34BB80046F932 /* ProjectListDNViewController.swift */,
+			);
+			path = DmitriyViewControllers;
+			sourceTree = "<group>";
+		};
 		789DBF2626EAA4C3005F86D8 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +133,7 @@
 			children = (
 				789DBF3826EAA4C3005F86D8 /* Main.storyboard */,
 				FD7E975C26F0653C00751A18 /* Nadia.storyboard */,
+				2C91B6A626EF9255001A46C9 /* Dmitriy.storyboard */,
 				789DBF3D26EAA4C7005F86D8 /* LaunchScreen.storyboard */,
 				7873F63626F0D90F005BA974 /* Igor.storyboard */,
 			);
@@ -133,7 +156,7 @@
 				789DBF4926EAA909005F86D8 /* TabBarController.swift */,
 				FD7E975626EE018B00751A18 /* NadiaViewControllers */,
 				789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */,
-				789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */,
+				2C0D826426F38F2300D1C551 /* DmitriyViewControllers */,
 				789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */,
 			);
 			path = ViewControllers;
@@ -168,6 +191,9 @@
 		FD7E976226F33BB300751A18 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2CBC030F26EF646F005F2BE6 /* PersonDN.swift */,
+				2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */,
+				2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */,
 				786EE0FA26F4D19500E9688E /* ModelIgor.swift */,
 				FD7E974A26ECA5D700751A18 /* PersonN.swift */,
 			);
@@ -244,6 +270,7 @@
 				789DBF3F26EAA4C7005F86D8 /* LaunchScreen.storyboard in Resources */,
 				789DBF3C26EAA4C7005F86D8 /* Assets.xcassets in Resources */,
 				789DBF3A26EAA4C3005F86D8 /* Main.storyboard in Resources */,
+				2C91B6A726EF9255001A46C9 /* Dmitriy.storyboard in Resources */,
 				7873F63726F0D90F005BA974 /* Igor.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +293,7 @@
 				789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */,
 				FD7E975126EDEA0600751A18 /* NadiaEducationTableViewCell.swift in Sources */,
 				FD7E975F26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift in Sources */,
+				2CBC031026EF646F005F2BE6 /* PersonDN.swift in Sources */,
 				789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */,
 				FD7E976626F33D1100751A18 /* Extension_UITableView.swift in Sources */,
 				FD7E976126F326FF00751A18 /* NadiaDefaultTableViewCell.swift in Sources */,
@@ -273,9 +301,13 @@
 				789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */,
 				FD7E976426F33C9200751A18 /* Extension_UIView.swift in Sources */,
 				FD7E974F26EDE92300751A18 /* NadiaWorkExperienceCell.swift in Sources */,
+				2C0FEF9526F0B2DC0098EDA9 /* DetailInfoDNViewController.swift in Sources */,
+				2C0FEF9926F0C9A90098EDA9 /* ProjectDN.swift in Sources */,
+				2C436F6E26F34BB80046F932 /* ProjectListDNViewController.swift in Sources */,
 				789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */,
 				FD7E975B26EF35A000751A18 /* NadiaDetailedImageViewController.swift in Sources */,
 				789DBF4C26EAAAB4005F86D8 /* IgorProfileRootViewController.swift in Sources */,
+				2CBC031226EF6CD1005F2BE6 /* ProfessionDN.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
