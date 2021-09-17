@@ -13,7 +13,7 @@ struct PersonDN {
     let contact: String
     let hobbies: [String]
     
-    let photo: Photo
+    let photo: String
     let profession: ProfessionDN
     
     var fullName: String {
@@ -31,14 +31,9 @@ struct PersonDN {
                          "Фотосъёмка",
                          "Велоспорт",
                          "Горные лыжи"],
-               photo: Photo.dmitriy,
+               photo: "dmitriyPhoto",
                profession: ProfessionDN.getProfession())
     }
-}
-
-
-enum Photo: String {
-    case dmitriy = "dmitriyPhoto"
 }
 
 enum EnglishLevel: String {

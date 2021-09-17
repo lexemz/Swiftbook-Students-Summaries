@@ -56,7 +56,7 @@ extension DmitryProfileRootViewController {
     }
     
     private func setupPhotoImageView() {
-        photoImageView.image = UIImage(named: person.photo.rawValue)
+        photoImageView.image = UIImage(named: person.photo)
         photoImageView.layer.cornerRadius = photoImageView.frame.height / 2
         photoImageView.clipsToBounds = true
     }
