@@ -50,22 +50,6 @@
             </objects>
             <point key="canvasLocation" x="383" y="240"/>
         </scene>
-        <!--Nadia Root Profile-->
-        <scene sceneID="ymJ-KW-9Nc">
-            <objects>
-                <viewController id="pUc-Yo-Zoo" userLabel="Nadia Root Profile" customClass="NadiaProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0oj-I3-xER">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="xtn-O9-H0g"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Nadia" image="person" catalog="system" selectedImage="person.fill" id="dSq-ow-0RP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K7a-fa-HaT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2158" y="240"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="epY-e3-mr7">
             <objects>
@@ -93,7 +77,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="pUc-Yo-Zoo" kind="relationship" relationship="viewControllers" id="zTM-w0-VOg"/>
+                        <segue destination="Tqr-t7-74A" kind="relationship" relationship="viewControllers" id="L16-wa-BLv"/>
                         <segue destination="JGT-gj-NFc" kind="relationship" relationship="viewControllers" id="vZd-Zg-Oan"/>
                         <segue destination="YRV-Oy-HPP" kind="relationship" relationship="viewControllers" id="2nq-rE-taN"/>
                         <segue destination="eBc-cx-s6Z" kind="relationship" relationship="viewControllers" id="pPK-pr-NYy"/>
@@ -102,6 +86,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glc-43-M7D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-888" y="-603"/>
+        </scene>
+        <!--NadiaProfileRootViewController-->
+        <scene sceneID="Vav-dm-544">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Nadia" referencedIdentifier="NadiaProfileRootViewController" id="Tqr-t7-74A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ApI-ke-lfh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzc-pB-UKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1985" y="-89"/>
         </scene>
     </scenes>
     <resources>
