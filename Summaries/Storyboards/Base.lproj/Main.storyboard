@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dmitry Root Profile-->
+        <!--dmitriyRootProfile-->
         <scene sceneID="JYq-0k-FAa">
             <objects>
                 <viewControllerPlaceholder storyboardName="Dmitriy" referencedIdentifier="dmitriyRootProfile" id="YRV-Oy-HPP" sceneMemberID="viewController">
@@ -63,7 +63,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Kh2-Oo-YNL">
             <objects>
-                <tabBarController id="tlD-0b-h9d" customClass="TabBarController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="tlD-0b-h9d" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Vd5-kb-gai"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J4l-dc-TfS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
