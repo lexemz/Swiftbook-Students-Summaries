@@ -77,46 +77,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZH1-le-Z4i">
-                                <rect key="frame" x="0.0" y="74" width="320" height="4"/>
-                            </progressView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="i0L-aF-duy" userLabel="Third question">
-                                <rect key="frame" x="16" y="128" width="288" height="153"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ok! How many pets do you want? (Maximum five)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="our-6h-laL">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Ima-pH-nAy">
-                                        <rect key="frame" x="0.0" y="62" width="288" height="34"/>
-                                        <subviews>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="aGV-sC-FYv">
-                                                <rect key="frame" x="0.0" y="1" width="94" height="32"/>
-                                                <connections>
-                                                    <action selector="stepperPressed" destination="CLO-qq-P1I" eventType="valueChanged" id="44r-cu-IGC"/>
-                                                </connections>
-                                            </stepper>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZtF-nJ-FpY">
-                                                <rect key="frame" x="121" y="0.0" width="167" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbY-xq-RFM">
-                                        <rect key="frame" x="0.0" y="117" width="288" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="I`m ready!"/>
-                                        <connections>
-                                            <action selector="readyButtonPushed" destination="CLO-qq-P1I" eventType="touchUpInside" id="97c-cN-IME"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="6AV-o8-Ww9" userLabel="First Question">
-                                <rect key="frame" x="16" y="138" width="288" height="311.5"/>
+                                <rect key="frame" x="16" y="128.5" width="288" height="311.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you a cat or a dog person?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0sP-wu-ich">
                                         <rect key="frame" x="28" y="0.0" width="232" height="20.5"/>
@@ -143,6 +105,7 @@
                                         <state key="normal" title="Next question"/>
                                         <connections>
                                             <action selector="nextQuestionButtonPressed" destination="CLO-qq-P1I" eventType="touchUpInside" id="Bfv-gl-TpJ"/>
+                                            <segue destination="wEC-ES-Re3" kind="presentation" modalPresentationStyle="fullScreen" id="SH7-y1-wSg"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnr-oD-K9Q">
@@ -161,30 +124,17 @@
                         <viewLayoutGuide key="safeArea" id="68F-Qg-wSB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZH1-le-Z4i" firstAttribute="top" secondItem="68F-Qg-wSB" secondAttribute="top" constant="30" id="66R-xO-bA0"/>
                             <constraint firstItem="6AV-o8-Ww9" firstAttribute="centerX" secondItem="pJv-JA-fL4" secondAttribute="centerX" id="KMN-et-Plv"/>
-                            <constraint firstItem="i0L-aF-duy" firstAttribute="top" secondItem="ZH1-le-Z4i" secondAttribute="bottom" constant="50" id="MZd-Os-QLX"/>
-                            <constraint firstItem="6AV-o8-Ww9" firstAttribute="top" secondItem="ZH1-le-Z4i" secondAttribute="bottom" constant="60" id="UyN-FL-sO8"/>
-                            <constraint firstItem="ZH1-le-Z4i" firstAttribute="leading" secondItem="68F-Qg-wSB" secondAttribute="leading" id="aqA-AH-cbk"/>
-                            <constraint firstAttribute="trailing" secondItem="i0L-aF-duy" secondAttribute="trailing" constant="16" id="cfr-AH-h6g"/>
+                            <constraint firstItem="6AV-o8-Ww9" firstAttribute="centerY" secondItem="pJv-JA-fL4" secondAttribute="centerY" id="SnS-SZ-BFg"/>
                             <constraint firstItem="6AV-o8-Ww9" firstAttribute="leading" secondItem="68F-Qg-wSB" secondAttribute="leading" constant="16" id="guZ-6d-q8P"/>
-                            <constraint firstAttribute="trailing" secondItem="ZH1-le-Z4i" secondAttribute="trailing" id="mc7-CV-qvZ"/>
                             <constraint firstItem="68F-Qg-wSB" firstAttribute="trailing" secondItem="6AV-o8-Ww9" secondAttribute="trailing" constant="16" id="wSb-6f-a3v"/>
-                            <constraint firstItem="i0L-aF-duy" firstAttribute="leading" secondItem="68F-Qg-wSB" secondAttribute="leading" constant="16" id="z1V-Yn-toT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xfq-Ah-UlI">
-                        <barButtonItem key="backBarButtonItem" title="Back!" id="O3O-OX-nUa"/>
-                    </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="firstStack" destination="6AV-o8-Ww9" id="dfL-06-Np1"/>
                         <outlet property="firstStackEmoji" destination="Fnr-oD-K9Q" id="HDX-xO-JuE"/>
                         <outlet property="firstStackLabel" destination="qBN-Mi-nTr" id="kCc-Yr-zJ7"/>
-                        <outlet property="progressBar" destination="ZH1-le-Z4i" id="2sW-9Z-Z0h"/>
-                        <outlet property="secondStack" destination="i0L-aF-duy" id="LXE-Xo-q0Y"/>
-                        <outlet property="secondStackStepper" destination="aGV-sC-FYv" id="v74-tm-Fsj"/>
-                        <outlet property="secondStackTextField" destination="ZtF-nJ-FpY" id="vly-8r-FRD"/>
                         <outlet property="slider" destination="NsJ-y6-QXO" id="DF1-hj-IdR"/>
                     </connections>
                 </viewController>
@@ -192,7 +142,7 @@
             </objects>
             <point key="canvasLocation" x="1530" y="40.140845070422536"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="vKb-77-3lu">
             <objects>
                 <viewController id="wEC-ES-Re3" sceneMemberID="viewController">
@@ -216,7 +166,7 @@
                                 </prototypes>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cld-YN-ic6">
-                                <rect key="frame" x="70" y="12" width="180" height="180"/>
+                                <rect key="frame" x="70" y="56" width="180" height="180"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aSg-mK-R3o"/>
@@ -229,7 +179,9 @@
                             <constraint firstItem="Cld-YN-ic6" firstAttribute="width" secondItem="3Qb-i5-ICP" secondAttribute="width" multiplier="0.5625" id="fvu-ls-u9m"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DjJ-bx-pdT"/>
+                    <navigationItem key="navigationItem" title="Title" id="ycP-Ud-RGJ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMV-ts-xlE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

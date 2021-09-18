@@ -10,52 +10,28 @@ import UIKit
 class SecondViewController: UIViewController {
     
     // MARK: - IB Outlets
-    
-    @IBOutlet var progressBar: UIProgressView!
-    
     @IBOutlet var firstStack: UIStackView!
     @IBOutlet var slider: UISlider!
     @IBOutlet var firstStackLabel: UILabel!
     @IBOutlet var firstStackEmoji: UILabel!
     
-    @IBOutlet var secondStack: UIStackView!
-    @IBOutlet var secondStackTextField: UITextField!
-    @IBOutlet var secondStackStepper: UIStepper!
-    
     // MARK: - Private properties
-    
-    private var catsOrDogs: Float = 0
-    private var numberOfPets = 0
+    private var catsOrDogs: Float!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         firstStackLabel.text = ""
-        progressBar.progress = 0
-        secondStack.isHidden = true
     }
     
-     // MARK: - Navigation
-     
-
-    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let thirdVC = segue.destination as? ThirdViewController else { return }
+        thirdVC.animalDistribution = catsOrDogs
+    }
+         
     // MARK: - IB Actions
-    
     @IBAction func nextQuestionButtonPressed() {
         catsOrDogs = slider.value
-        firstStack.isHidden = true
-        progressBar.setProgress(0.5, animated: true)
-        secondStack.isHidden.toggle()
-    }
-    
-    @IBAction func stepperPressed() {
-        let stepperValue = Int(secondStackStepper.value)
-        secondStackTextField.text = String(stepperValue)
-    }
-    
-    
-    @IBAction func readyButtonPushed() {
-        progressBar.setProgress(1, animated: true)
-        numberOfPets = Int(secondStackStepper.value)
     }
     
     @IBAction func moveTheSlider() {
@@ -72,9 +48,6 @@ class SecondViewController: UIViewController {
         }
     }
     
-    
     // MARK: - Private Methods
-    
-    
     
 }

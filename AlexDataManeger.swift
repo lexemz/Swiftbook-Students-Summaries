@@ -6,7 +6,7 @@
 //
 
 class Dogs {
-    let shared = Dogs()
+    static let shared = Dogs()
     
     let names = ["Milo", "Samus", "Powerwolf", "Slayer", "Cacodemon"]
     let favActivities = ["Playing", "Sleeping", "Running", "Barking", "Being cute"]
@@ -15,7 +15,7 @@ class Dogs {
 }
 
 class Cats {
-    let shared = Cats()
+    static let shared = Cats()
     
     let names = ["Mancubus", "Imp", "Loki", "Ocelot", "Kane"]
     let favActivities = ["Purring", "Sleeping", "Scratching", "Eating", "Hiding"]

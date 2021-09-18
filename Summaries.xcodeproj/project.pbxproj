@@ -21,6 +21,7 @@
 		EA84C7CC26F3E9DE00C94A89 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7CB26F3E9DE00C94A89 /* SecondViewController.swift */; };
 		EA84C7CE26F6274F00C94A89 /* AlexPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7CD26F6274F00C94A89 /* AlexPet.swift */; };
 		EA84C7D026F6276100C94A89 /* AlexDataManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7CF26F6276100C94A89 /* AlexDataManeger.swift */; };
+		EA84C7D226F652F600C94A89 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7D126F652F600C94A89 /* ThirdViewController.swift */; };
 		EA8D44EE26F272C800A3D591 /* Alex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8D44ED26F272C800A3D591 /* Alex.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		EA84C7CB26F3E9DE00C94A89 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		EA84C7CD26F6274F00C94A89 /* AlexPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexPet.swift; sourceTree = "<group>"; };
 		EA84C7CF26F6276100C94A89 /* AlexDataManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexDataManeger.swift; sourceTree = "<group>"; };
+		EA84C7D126F652F600C94A89 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		EA8D44ED26F272C800A3D591 /* Alex.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alex.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 			children = (
 				EA84C7C826F3B9B000C94A89 /* FirstViewController.swift */,
 				EA84C7CB26F3E9DE00C94A89 /* SecondViewController.swift */,
+				EA84C7D126F652F600C94A89 /* ThirdViewController.swift */,
 			);
 			path = "Alex`s VCs";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */,
 				789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */,
 				789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */,
+				EA84C7D226F652F600C94A89 /* ThirdViewController.swift in Sources */,
 				789DBF4C26EAAAB4005F86D8 /* IgorProfileRootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
