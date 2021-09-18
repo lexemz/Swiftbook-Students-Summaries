@@ -20,57 +20,45 @@ class SecondViewController: UIViewController {
     
     @IBOutlet var secondStack: UIStackView!
     @IBOutlet var secondStackTextField: UITextField!
-    
-    
-    
+    @IBOutlet var secondStackStepper: UIStepper!
     
     // MARK: - Private properties
     
-    private var sliderValue: Float = 0
-
+    private var catsOrDogs: Float = 0
+    private var numberOfPets = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         firstStackLabel.text = ""
         progressBar.progress = 0
         secondStack.isHidden = true
-        
-        
-
-        // Do any additional setup after loading the view.
     }
     
+     // MARK: - Navigation
+     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
     // MARK: - IB Actions
     
     @IBAction func nextQuestionButtonPressed() {
-        sliderValue = slider.value
+        catsOrDogs = slider.value
         firstStack.isHidden = true
         progressBar.setProgress(0.5, animated: true)
+        secondStack.isHidden.toggle()
     }
     
     @IBAction func stepperPressed() {
+        let stepperValue = Int(secondStackStepper.value)
+        secondStackTextField.text = String(stepperValue)
     }
     
     
     @IBAction func readyButtonPushed() {
+        progressBar.setProgress(1, animated: true)
+        numberOfPets = Int(secondStackStepper.value)
     }
     
-    
-    
-    
-    
     @IBAction func moveTheSlider() {
-        
         switch slider.value  {
         case 0.4 ... 0.6:
             firstStackLabel.text = "I like my puppies as much as my cats"

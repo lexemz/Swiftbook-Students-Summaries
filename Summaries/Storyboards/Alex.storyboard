@@ -92,7 +92,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Ima-pH-nAy">
                                         <rect key="frame" x="0.0" y="62" width="288" height="34"/>
                                         <subviews>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="aGV-sC-FYv">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="aGV-sC-FYv">
                                                 <rect key="frame" x="0.0" y="1" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="stepperPressed" destination="CLO-qq-P1I" eventType="valueChanged" id="44r-cu-IGC"/>
@@ -172,11 +172,6 @@
                             <constraint firstItem="68F-Qg-wSB" firstAttribute="trailing" secondItem="6AV-o8-Ww9" secondAttribute="trailing" constant="16" id="wSb-6f-a3v"/>
                             <constraint firstItem="i0L-aF-duy" firstAttribute="leading" secondItem="68F-Qg-wSB" secondAttribute="leading" constant="16" id="z1V-Yn-toT"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="i0L-aF-duy"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="xfq-Ah-UlI">
                         <barButtonItem key="backBarButtonItem" title="Back!" id="O3O-OX-nUa"/>
@@ -188,6 +183,7 @@
                         <outlet property="firstStackLabel" destination="qBN-Mi-nTr" id="kCc-Yr-zJ7"/>
                         <outlet property="progressBar" destination="ZH1-le-Z4i" id="2sW-9Z-Z0h"/>
                         <outlet property="secondStack" destination="i0L-aF-duy" id="LXE-Xo-q0Y"/>
+                        <outlet property="secondStackStepper" destination="aGV-sC-FYv" id="v74-tm-Fsj"/>
                         <outlet property="secondStackTextField" destination="ZtF-nJ-FpY" id="vly-8r-FRD"/>
                         <outlet property="slider" destination="NsJ-y6-QXO" id="DF1-hj-IdR"/>
                     </connections>
