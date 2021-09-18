@@ -22,7 +22,6 @@ class FirstViewController: UIViewController {
             message: "Type in your name and let`s get started!"
         )
         styleTheButton(button: letsGoButton)
-        
     }
     
     @IBAction func buttonPressed() {
@@ -33,20 +32,7 @@ class FirstViewController: UIViewController {
         }
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-// MARK: - Private methods
-
+    // MARK: - Private methods
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
@@ -92,16 +78,6 @@ class FirstViewController: UIViewController {
         button.titleLabel?.adjustsFontSizeToFitWidth = true
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 // MARK: - UITextFieldDelegate
 extension FirstViewController: UITextFieldDelegate {

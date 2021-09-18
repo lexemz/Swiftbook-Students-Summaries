@@ -47,7 +47,4 @@ class SecondViewController: UIViewController {
             firstStackEmoji.text = "🐶"
         }
     }
-    
-    // MARK: - Private Methods
-    
 }
