@@ -13,9 +13,9 @@ struct PersonI {
     
     let contacts: [Contact]
     
-    var hobbies: [Hobbie]
-    var skills: [Skill]
-    var projects: [Project]
+    let hobbies: [Hobbie]
+    let skills: [Skill]
+    let projects: [Project]
     
     var fullName: String {
         "\(name) \(surname)"
