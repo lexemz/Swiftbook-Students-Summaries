@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class AlexSecondViewController: UIViewController {
     
     // MARK: - IB Outlets
     @IBOutlet var firstStack: UIStackView!
@@ -32,7 +32,7 @@ class SecondViewController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let thirdVC = segue.destination as? ThirdViewController else { return }
+        guard let thirdVC = segue.destination as? AlexThirdViewController else { return }
         thirdVC.allPets = allAnimals
         thirdVC.user = user
     }
@@ -108,7 +108,7 @@ class SecondViewController: UIViewController {
 }
 
 // MARK: - Extension for button configuration
-extension SecondViewController {
+extension AlexSecondViewController {
     
     private func styleTheButton(button: UIButton) {
         

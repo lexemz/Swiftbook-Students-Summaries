@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class AlexThirdViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: - IB Outlets
     @IBOutlet var petsTableView: UITableView!
