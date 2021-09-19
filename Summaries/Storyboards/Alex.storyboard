@@ -185,7 +185,9 @@
                             <constraint firstItem="Cld-YN-ic6" firstAttribute="top" secondItem="aSg-mK-R3o" secondAttribute="top" constant="20" id="yFj-s4-6xm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="WHD-ms-8zp"/>
+                    <navigationItem key="navigationItem" id="WHD-ms-8zp">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" image="heart.fill" catalog="system" id="9BS-Hc-9ts"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="petsImage" destination="Cld-YN-ic6" id="L3u-SS-Chb"/>
                         <outlet property="petsTableView" destination="wkc-fZ-EbM" id="ow2-xU-iWb"/>
@@ -198,6 +200,7 @@
     </scenes>
     <resources>
         <image name="CatsBackground" width="734" height="732"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
