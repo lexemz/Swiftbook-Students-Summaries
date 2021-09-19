@@ -101,9 +101,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wN4-Zr-OgH">
-                                        <rect key="frame" x="66" y="129" width="156" height="44"/>
+                                        <rect key="frame" x="124" y="129" width="40" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <state key="normal" title="Next question"/>
+                                        <state key="normal" title="Ok!"/>
                                         <connections>
                                             <action selector="nextQuestionButtonPressed" destination="CLO-qq-P1I" eventType="touchUpInside" id="Bfv-gl-TpJ"/>
                                             <segue destination="wEC-ES-Re3" kind="show" id="SH7-y1-wSg"/>
@@ -123,7 +123,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="68F-Qg-wSB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
                             <constraint firstItem="6AV-o8-Ww9" firstAttribute="centerX" secondItem="pJv-JA-fL4" secondAttribute="centerX" id="KMN-et-Plv"/>
                             <constraint firstItem="6AV-o8-Ww9" firstAttribute="centerY" secondItem="pJv-JA-fL4" secondAttribute="centerY" id="SnS-SZ-BFg"/>
@@ -132,11 +132,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sW3-HW-Bcg"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="firstStack" destination="6AV-o8-Ww9" id="dfL-06-Np1"/>
                         <outlet property="firstStackEmoji" destination="Fnr-oD-K9Q" id="HDX-xO-JuE"/>
                         <outlet property="firstStackLabel" destination="qBN-Mi-nTr" id="kCc-Yr-zJ7"/>
+                        <outlet property="okButton" destination="wN4-Zr-OgH" id="mtW-0V-uhH"/>
                         <outlet property="slider" destination="NsJ-y6-QXO" id="DF1-hj-IdR"/>
                     </connections>
                 </viewController>
@@ -185,15 +185,7 @@
                             <constraint firstItem="Cld-YN-ic6" firstAttribute="top" secondItem="aSg-mK-R3o" secondAttribute="top" constant="20" id="yFj-s4-6xm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="WHD-ms-8zp">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="4ui-yy-5UH">
-                            <connections>
-                                <segue destination="uMk-Bn-gC0" kind="show" id="xLx-Vl-9ZO"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationItem key="navigationItem" id="WHD-ms-8zp"/>
                     <connections>
                         <outlet property="petsImage" destination="Cld-YN-ic6" id="L3u-SS-Chb"/>
                         <outlet property="petsTableView" destination="wkc-fZ-EbM" id="ow2-xU-iWb"/>
@@ -211,6 +203,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -17,6 +17,7 @@
 		789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */; };
 		789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */; };
 		789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */; };
+		EA58194926F7646F00AECFA0 /* AlexUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA58194826F7646F00AECFA0 /* AlexUser.swift */; };
 		EA84C7C926F3B9B000C94A89 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7C826F3B9B000C94A89 /* FirstViewController.swift */; };
 		EA84C7CC26F3E9DE00C94A89 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7CB26F3E9DE00C94A89 /* SecondViewController.swift */; };
 		EA84C7CE26F6274F00C94A89 /* AlexPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7CD26F6274F00C94A89 /* AlexPet.swift */; };
@@ -38,6 +39,7 @@
 		789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmitryProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaProfileRootViewController.swift; sourceTree = "<group>"; };
+		EA58194826F7646F00AECFA0 /* AlexUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexUser.swift; sourceTree = "<group>"; };
 		EA84C7C826F3B9B000C94A89 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		EA84C7CB26F3E9DE00C94A89 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		EA84C7CD26F6274F00C94A89 /* AlexPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexPet.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		789DBF2626EAA4C3005F86D8 = {
 			isa = PBXGroup;
 			children = (
+				EA58194826F7646F00AECFA0 /* AlexUser.swift */,
 				EA84C7CF26F6276100C94A89 /* AlexDataManager.swift */,
 				EA84C7CD26F6274F00C94A89 /* AlexPet.swift */,
 				789DBF3126EAA4C3005F86D8 /* Summaries */,
@@ -211,6 +214,7 @@
 				789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */,
 				789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */,
 				EA84C7D226F652F600C94A89 /* ThirdViewController.swift in Sources */,
+				EA58194926F7646F00AECFA0 /* AlexUser.swift in Sources */,
 				789DBF4C26EAAAB4005F86D8 /* IgorProfileRootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,12 +13,20 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet var petsTableView: UITableView!
     @IBOutlet var petsImage: UIImageView!
     
- 
-    // MARK: - Private Properties
+    // MARK: - Public Properties
+    var user: User!
+    var animalDistribution: Float!
     var allPets: [[Pet]]!
     
     override func viewDidLoad() {
         petsTableView.rowHeight = 100
+        customizeNavigationBar()
+    }
+    
+    // MARK: - Private Methods
+    func customizeNavigationBar() {
+        let navBar = self.navigationItem
+        navBar.title = "Pets of \(user.name)"
     }
     
     // MARK: - UITableViewDataSource
@@ -31,6 +39,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Pet", for: indexPath)
         let name = allPets[indexPath.section][indexPath.row].name
         let petsIndex = allPets[indexPath.section][indexPath.row].petsIndex
@@ -59,14 +68,12 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel()
         label.backgroundColor = UIColor.purple
+        label.textColor = .black
         return label
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let image = UIImage(named: allPets[indexPath.section][indexPath.row].petsIndex)
         petsImage.image = image
-    }
-    
-    // MARK: - Public Properties
-    var animalDistribution: Float!
+    }    
 }

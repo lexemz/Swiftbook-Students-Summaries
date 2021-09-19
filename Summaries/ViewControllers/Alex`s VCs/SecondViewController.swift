@@ -14,21 +14,27 @@ class SecondViewController: UIViewController {
     @IBOutlet var slider: UISlider!
     @IBOutlet var firstStackLabel: UILabel!
     @IBOutlet var firstStackEmoji: UILabel!
+    @IBOutlet var okButton: UIButton!
+    
+    // MARK: - Public Properties
+    var user: User!
     
     // MARK: - Private properties
     private var catsOrDogs: Float!
     private var allAnimals: [[Pet]]!
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         firstStackLabel.text = ""
         slider.value = 0.5
+        styleTheButton(button: okButton)
     }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let thirdVC = segue.destination as? ThirdViewController else { return }
         thirdVC.allPets = allAnimals
+        thirdVC.user = user
     }
          
     // MARK: - IB Actions
@@ -98,5 +104,45 @@ class SecondViewController: UIViewController {
             allPets.append(dogs)
         }
         return allPets
+    }
+}
+
+// MARK: - Extension for button configuration
+extension SecondViewController {
+    
+    private func styleTheButton(button: UIButton) {
+        
+        let textColor = UIColor(
+            cgColor: CGColor(
+                red: 255,
+                green: 255,
+                blue: 255,
+                alpha: 1))
+        
+        let shadowColor = UIColor(
+            cgColor: CGColor(
+                red: 0,
+                green: 0,
+                blue: 0,
+                alpha: 0.5))
+        
+        let contentInsets = UIEdgeInsets(
+            top: 0,
+            left: 10,
+            bottom: 0,
+            right: 10)
+        
+        button.layer.borderWidth = 0.7
+        button.layer.cornerRadius = 5
+        button.layer.backgroundColor = CGColor(
+            red: 128,
+            green: 0,
+            blue: 128,
+            alpha: 0.7)
+        button.setTitleColor(textColor, for: .normal)
+        button.setTitleShadowColor(shadowColor, for: .normal)
+        button.contentEdgeInsets = contentInsets
+        button.titleLabel?.minimumScaleFactor = 0.5
+        button.titleLabel?.adjustsFontSizeToFitWidth = true
     }
 }

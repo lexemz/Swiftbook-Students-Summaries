@@ -13,28 +13,40 @@ protocol ThirdViewControllerDelegate {
 
 class FirstViewController: UIViewController {
     
+    // MARK: - IB Outlets
     @IBOutlet var textField: UITextField!
     
     @IBOutlet var letsGoButton: UIButton!
     
+    // MARK: - Private Properties
+    var user: User!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        styleTheButton(button: letsGoButton)
 
         showAlert(
             title: "Hello, buddy!",
             message: "Type in your name and let`s get started!"
         )
-        styleTheButton(button: letsGoButton)
     }
     
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let secondVC = segue.destination as? SecondViewController else { return }
+        secondVC.user = user
+    }
+    
+    // MARK: - IB Actions
     @IBAction func buttonPressed() {
         if textField.text == nil || textField.text == "" {
             showAlert(
                 title: "Oops!",
                 message: "Still need your name! :)")
         }
+        
+        guard let name = textField.text else { return }
+        user = User.getUser(name: name)
     }
     
     // MARK: - Private methods
@@ -46,6 +58,23 @@ class FirstViewController: UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
+}
+
+// MARK: - UITextFieldDelegate
+extension FirstViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+}
+
+extension FirstViewController: ThirdViewControllerDelegate {
+    func initializeDelegate(dataType: UIViewController) {
+    }
+}
+
+// MARK: - Extension for button configuration
+extension FirstViewController {
     
     private func styleTheButton(button: UIButton) {
         
@@ -81,19 +110,5 @@ class FirstViewController: UIViewController {
         button.contentEdgeInsets = contentInsets
         button.titleLabel?.minimumScaleFactor = 0.5
         button.titleLabel?.adjustsFontSizeToFitWidth = true
-    }
-}
-
-// MARK: - UITextFieldDelegate
-extension FirstViewController: UITextFieldDelegate {
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(true)
-    }
-}
-
-extension FirstViewController: ThirdViewControllerDelegate {
-    func initializeDelegate(dataType: UIViewController) {
-        
     }
 }
