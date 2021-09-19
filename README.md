@@ -6,14 +6,19 @@
 ## Igor
 [GitHub](https://github.com/lexemz)
 
-<img src="doc/img/igor_screen.jpg" alt="igor_screen.jpg" width="350"/> 
+<img src="doc/img/igor_screen.jpg" alt="igor_screen.jpg" width="350"/>
 
 ## Nadia
 [GitHub](https://github.com/NadzeyaShpakouskaya)
 
-<img src="doc/img/nadia_screen.jpg" alt="nadia_screen.jpg" width="350"/> 
+<img src="doc/img/nadia_screen.jpg" alt="nadia_screen.jpg" width="350"/>
 
 ## Dmitriy
 [GitHub](https://github.com/ZyFun)
 
-<img src="doc/img/dmitriy_screen.jpg" alt="dmitriy_screen.jpg" width="350"/> 
+<img src="doc/img/dmitriy_screen.jpg" alt="dmitriy_screen.jpg" width="350"/>
+
+## Alex
+[GitHub](https://github.com/ArcaniZZZ)
+
+<img src="doc/img/alex_screen.jpg" alt="alex_screen.jpg" width="350"/>
