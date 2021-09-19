@@ -11,41 +11,43 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     // MARK: - IB Outlets
     @IBOutlet var petsTableView: UITableView!
+    @IBOutlet var petsImage: UIImageView!
     
-    
+ 
     // MARK: - Private Properties
-    private var cats: [Cat]!
-    private var dogs: [Dog]!
-    private var allPets: [[Pet]]!
+    var allPets: [[Pet]]!
     
+    override func viewDidLoad() {
+        petsTableView.rowHeight = 100
+    }
     
-    // MARK: - UITableViewDelegate
+    // MARK: - UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
-        if cats.isEmpty || dogs.isEmpty {
-            return 1
-        } else {
-            return 2
-        }
+        allPets.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        allPets[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let label = UILabel()
-        label.text = "123"
-        label.backgroundColor = UIColor.purple
-        return label
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Pet", for: indexPath)
+        let name = allPets[indexPath.section][indexPath.row].name
+        let petsIndex = allPets[indexPath.section][indexPath.row].petsIndex
+        var content = cell.defaultContentConfiguration()
+        
+        content.text = name
+        content.image = UIImage(named: petsIndex)
+        
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
+        
+        cell.contentConfiguration = content
+         
+        return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if pets[section] is Dog {
+        if allPets[section] is [Dog] {
             return "Dog"
         }
         else {
@@ -53,74 +55,18 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     
+    // MARK: - UITableViewDelegate
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel()
+        label.backgroundColor = UIColor.purple
+        return label
+    }
     
-    
-    
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let image = UIImage(named: allPets[indexPath.section][indexPath.row].petsIndex)
+        petsImage.image = image
+    }
     
     // MARK: - Public Properties
     var animalDistribution: Float!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
-    private func getCats() -> [Cat] {
-        var cats: [Cat] = []
-        guard let animalDistribution = animalDistribution else { return [] }
-        switch animalDistribution  {
-        case 0.4 ... 0.6:
-            for _ in 0 ..< DistributionOfPetTypes.evenDistribution.rawValue {
-                cats.append(Cat.getCat())
-            }
-        case 0 ..< 0.4:
-            for _ in 0 ..< DistributionOfPetTypes.onePetType.rawValue {
-                cats.append(Cat.getCat())
-            }
-        default:
-            return []
-        }
-        return cats
-    }
-    
-    private func getDogs() -> [Dog] {
-        var dogs: [Dog] = []
-        guard let animalDistribution = animalDistribution else { return [] }
-        switch animalDistribution  {
-        case 0.4 ... 0.6:
-            for _ in 0 ..< DistributionOfPetTypes.evenDistribution.rawValue {
-                dogs.append(Dog.getDog())
-            }
-        case 0.6 ... 1:
-            for _ in 0 ..< DistributionOfPetTypes.onePetType.rawValue {
-                dogs.append(Dog.getDog())
-            }
-        default:
-            return []
-        }
-        return dogs
-    }
-    
-    private func fillAllPetsArray() {
-        if !dogs.isEmpty {
-            allPets.append(dogs)
-        }
-        
-        if !cats.isEmpty {
-            allPets.append(cats)
-        }
-    }
 }

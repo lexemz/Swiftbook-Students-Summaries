@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ThirdViewControllerDelegate {
+    func initializeDelegate(dataType: UIViewController)
+}
+
 class FirstViewController: UIViewController {
     
     @IBOutlet var textField: UITextField!
@@ -15,8 +19,9 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
-        textField.delegate = self
+
         showAlert(
             title: "Hello, buddy!",
             message: "Type in your name and let`s get started!"
@@ -84,5 +89,11 @@ extension FirstViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
+    }
+}
+
+extension FirstViewController: ThirdViewControllerDelegate {
+    func initializeDelegate(dataType: UIViewController) {
+        
     }
 }
