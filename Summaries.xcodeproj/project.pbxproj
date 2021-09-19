@@ -116,7 +116,7 @@
 				789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */,
 				789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */,
 				789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */,
-				EA84C7CA26F3B9B500C94A89 /* Alex`s VCs */,
+				EA84C7CA26F3B9B500C94A89 /* Alex VCs */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -138,14 +138,14 @@
 			path = DataManagers;
 			sourceTree = "<group>";
 		};
-		EA84C7CA26F3B9B500C94A89 /* Alex`s VCs */ = {
+		EA84C7CA26F3B9B500C94A89 /* Alex VCs */ = {
 			isa = PBXGroup;
 			children = (
 				EA84C7C826F3B9B000C94A89 /* FirstViewController.swift */,
 				EA84C7CB26F3E9DE00C94A89 /* SecondViewController.swift */,
 				EA84C7D126F652F600C94A89 /* ThirdViewController.swift */,
 			);
-			path = "Alex`s VCs";
+			path = "Alex VCs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
