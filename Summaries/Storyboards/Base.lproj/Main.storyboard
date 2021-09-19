@@ -3,29 +3,11 @@
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Igor Root Profile-->
-        <scene sceneID="l7S-Uk-zc5">
-            <objects>
-                <viewController id="JGT-gj-NFc" userLabel="Igor Root Profile" customClass="IgorProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ADt-b2-JXO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="b7I-wG-vrD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Igor" image="person" catalog="system" selectedImage="person.fill" id="asW-XM-II3"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U2d-Li-hhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1329" y="240"/>
-        </scene>
         <!--dmitriyRootProfile-->
-        <scene sceneID="VU6-U1-AQk">
+        <scene sceneID="JYq-0k-FAa">
             <objects>
                 <viewControllerPlaceholder storyboardName="Dmitriy" referencedIdentifier="dmitriyRootProfile" id="YRV-Oy-HPP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="SHo-yo-vzw"/>
@@ -34,21 +16,25 @@
             </objects>
             <point key="canvasLocation" x="-497" y="-83"/>
         </scene>
-        <!--Alex Root Profile-->
-        <scene sceneID="0dH-Df-2SF">
+        <!--alexRootViewController-->
+        <scene sceneID="GpC-5Q-8Wr">
             <objects>
-                <viewController id="eBc-cx-s6Z" userLabel="Alex Root Profile" customClass="AlexProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ObO-MN-dTD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="zfC-qL-w0h"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Alex" image="person" catalog="system" selectedImage="person.fill" id="oJo-AL-3O3"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PIt-8z-DAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Alex" referencedIdentifier="alexRootViewController" id="yje-0W-bvK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bfs-fJ-cjN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdw-Ca-fdl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="383" y="240"/>
+            <point key="canvasLocation" x="359" y="-66"/>
+        </scene>
+        <!--igorRootViewController-->
+        <scene sceneID="Rjz-3V-GCx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Igor" referencedIdentifier="igorRootViewController" id="x2i-YA-6JM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QSf-bB-dPC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNe-OQ-9wJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1328" y="-45"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="epY-e3-mr7">
@@ -69,7 +55,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Kh2-Oo-YNL">
             <objects>
-                <tabBarController id="tlD-0b-h9d" customClass="TabBarController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="tlD-0b-h9d" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Vd5-kb-gai"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J4l-dc-TfS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -77,10 +63,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="x2i-YA-6JM" kind="relationship" relationship="viewControllers" id="c4R-Nf-jdc"/>
                         <segue destination="Tqr-t7-74A" kind="relationship" relationship="viewControllers" id="L16-wa-BLv"/>
-                        <segue destination="JGT-gj-NFc" kind="relationship" relationship="viewControllers" id="vZd-Zg-Oan"/>
                         <segue destination="YRV-Oy-HPP" kind="relationship" relationship="viewControllers" id="2nq-rE-taN"/>
-                        <segue destination="eBc-cx-s6Z" kind="relationship" relationship="viewControllers" id="pPK-pr-NYy"/>
+                        <segue destination="yje-0W-bvK" kind="relationship" relationship="viewControllers" id="JFY-pe-qIO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glc-43-M7D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -98,11 +84,4 @@
             <point key="canvasLocation" x="-1985" y="-89"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

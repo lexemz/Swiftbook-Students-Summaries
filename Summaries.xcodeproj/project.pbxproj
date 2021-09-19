@@ -13,16 +13,23 @@
 		2C91B6A726EF9255001A46C9 /* Dmitriy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C91B6A626EF9255001A46C9 /* Dmitriy.storyboard */; };
 		2CBC031026EF646F005F2BE6 /* PersonDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC030F26EF646F005F2BE6 /* PersonDN.swift */; };
 		2CBC031226EF6CD1005F2BE6 /* ProfessionDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */; };
+		786EE0FB26F4D19500E9688E /* PersonI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786EE0FA26F4D19500E9688E /* PersonI.swift */; };
+		7873F63726F0D90F005BA974 /* Igor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7873F63626F0D90F005BA974 /* Igor.storyboard */; };
 		789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF3226EAA4C3005F86D8 /* AppDelegate.swift */; };
 		789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF3426EAA4C3005F86D8 /* SceneDelegate.swift */; };
 		789DBF3A26EAA4C3005F86D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789DBF3826EAA4C3005F86D8 /* Main.storyboard */; };
 		789DBF3C26EAA4C7005F86D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789DBF3B26EAA4C7005F86D8 /* Assets.xcassets */; };
 		789DBF3F26EAA4C7005F86D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789DBF3D26EAA4C7005F86D8 /* LaunchScreen.storyboard */; };
-		789DBF4A26EAA909005F86D8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4926EAA909005F86D8 /* TabBarController.swift */; };
 		789DBF4C26EAAAB4005F86D8 /* IgorProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */; };
 		789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */; };
-		789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */; };
 		789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */; };
+		EA58194926F7646F00AECFA0 /* AlexUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA58194826F7646F00AECFA0 /* AlexUser.swift */; };
+		EA84C7C926F3B9B000C94A89 /* AlexProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7C826F3B9B000C94A89 /* AlexProfileRootViewController.swift */; };
+		EA84C7CC26F3E9DE00C94A89 /* AlexSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7CB26F3E9DE00C94A89 /* AlexSecondViewController.swift */; };
+		EA84C7CE26F6274F00C94A89 /* AlexPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7CD26F6274F00C94A89 /* AlexPet.swift */; };
+		EA84C7D026F6276100C94A89 /* AlexDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7CF26F6276100C94A89 /* AlexDataManager.swift */; };
+		EA84C7D226F652F600C94A89 /* AlexThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84C7D126F652F600C94A89 /* AlexThirdViewController.swift */; };
+		EA8D44EE26F272C800A3D591 /* Alex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8D44ED26F272C800A3D591 /* Alex.storyboard */; };
 		FD7E974926EC90B900751A18 /* NadiaMainResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E974826EC90B900751A18 /* NadiaMainResumeViewController.swift */; };
 		FD7E974B26ECA5D700751A18 /* PersonN.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E974A26ECA5D700751A18 /* PersonN.swift */; };
 		FD7E974D26EDDED700751A18 /* NadiaDetailedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E974C26EDDED700751A18 /* NadiaDetailedInfoViewController.swift */; };
@@ -46,6 +53,8 @@
 		2C91B6A626EF9255001A46C9 /* Dmitriy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dmitriy.storyboard; sourceTree = "<group>"; };
 		2CBC030F26EF646F005F2BE6 /* PersonDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDN.swift; sourceTree = "<group>"; };
 		2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionDN.swift; sourceTree = "<group>"; };
+		786EE0FA26F4D19500E9688E /* PersonI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonI.swift; sourceTree = "<group>"; };
+		7873F63626F0D90F005BA974 /* Igor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Igor.storyboard; sourceTree = "<group>"; };
 		789DBF2F26EAA4C3005F86D8 /* Summaries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Summaries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		789DBF3226EAA4C3005F86D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		789DBF3426EAA4C3005F86D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,11 +62,16 @@
 		789DBF3B26EAA4C7005F86D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		789DBF3E26EAA4C7005F86D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		789DBF4026EAA4C7005F86D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		789DBF4926EAA909005F86D8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgorProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmitryProfileRootViewController.swift; sourceTree = "<group>"; };
-		789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaProfileRootViewController.swift; sourceTree = "<group>"; };
+		EA58194826F7646F00AECFA0 /* AlexUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexUser.swift; sourceTree = "<group>"; };
+		EA84C7C826F3B9B000C94A89 /* AlexProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexProfileRootViewController.swift; sourceTree = "<group>"; };
+		EA84C7CB26F3E9DE00C94A89 /* AlexSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexSecondViewController.swift; sourceTree = "<group>"; };
+		EA84C7CD26F6274F00C94A89 /* AlexPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexPet.swift; sourceTree = "<group>"; };
+		EA84C7CF26F6276100C94A89 /* AlexDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexDataManager.swift; sourceTree = "<group>"; };
+		EA84C7D126F652F600C94A89 /* AlexThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexThirdViewController.swift; sourceTree = "<group>"; };
+		EA8D44ED26F272C800A3D591 /* Alex.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alex.storyboard; sourceTree = "<group>"; };
 		FD7E974826EC90B900751A18 /* NadiaMainResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaMainResumeViewController.swift; sourceTree = "<group>"; };
 		FD7E974A26ECA5D700751A18 /* PersonN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonN.swift; sourceTree = "<group>"; };
 		FD7E974C26EDDED700751A18 /* NadiaDetailedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaDetailedInfoViewController.swift; sourceTree = "<group>"; };
@@ -114,12 +128,13 @@
 		789DBF3126EAA4C3005F86D8 /* Summaries */ = {
 			isa = PBXGroup;
 			children = (
-				789DBF4726EAA600005F86D8 /* App */,
 				789DBF4826EAA721005F86D8 /* ViewControllers */,
-				FD7E976726F33D6500751A18 /* Extensions */,
 				789DBF4626EAA5E8005F86D8 /* Storyboards */,
-				789DBF3B26EAA4C7005F86D8 /* Assets.xcassets */,
 				FD7E976226F33BB300751A18 /* Models */,
+				78B74CA026F7DEA000FB1BAB /* DataManagers */,
+				FD7E976726F33D6500751A18 /* Extensions */,
+				789DBF4726EAA600005F86D8 /* App */,
+				789DBF3B26EAA4C7005F86D8 /* Assets.xcassets */,
 			);
 			path = Summaries;
 			sourceTree = "<group>";
@@ -127,10 +142,12 @@
 		789DBF4626EAA5E8005F86D8 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				EA8D44ED26F272C800A3D591 /* Alex.storyboard */,
 				789DBF3826EAA4C3005F86D8 /* Main.storyboard */,
 				FD7E975C26F0653C00751A18 /* Nadia.storyboard */,
 				2C91B6A626EF9255001A46C9 /* Dmitriy.storyboard */,
 				789DBF3D26EAA4C7005F86D8 /* LaunchScreen.storyboard */,
+				7873F63626F0D90F005BA974 /* Igor.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -148,13 +165,30 @@
 		789DBF4826EAA721005F86D8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				789DBF4926EAA909005F86D8 /* TabBarController.swift */,
 				FD7E975626EE018B00751A18 /* NadiaViewControllers */,
 				789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */,
 				2C0D826426F38F2300D1C551 /* DmitriyViewControllers */,
-				789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */,
+				78B74C9F26F7DE8100FB1BAB /* AlexViewControllers */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		78B74C9F26F7DE8100FB1BAB /* AlexViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA84C7CB26F3E9DE00C94A89 /* AlexSecondViewController.swift */,
+				EA84C7D126F652F600C94A89 /* AlexThirdViewController.swift */,
+				EA84C7C826F3B9B000C94A89 /* AlexProfileRootViewController.swift */,
+			);
+			path = AlexViewControllers;
+			sourceTree = "<group>";
+		};
+		78B74CA026F7DEA000FB1BAB /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				EA84C7CF26F6276100C94A89 /* AlexDataManager.swift */,
+			);
+			path = DataManagers;
 			sourceTree = "<group>";
 		};
 		FD7E975626EE018B00751A18 /* NadiaViewControllers */ = {
@@ -186,9 +220,12 @@
 		FD7E976226F33BB300751A18 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EA84C7CD26F6274F00C94A89 /* AlexPet.swift */,
+				EA58194826F7646F00AECFA0 /* AlexUser.swift */,
 				2CBC030F26EF646F005F2BE6 /* PersonDN.swift */,
 				2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */,
 				2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */,
+				786EE0FA26F4D19500E9688E /* PersonI.swift */,
 				FD7E974A26ECA5D700751A18 /* PersonN.swift */,
 			);
 			path = Models;
@@ -260,11 +297,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8D44EE26F272C800A3D591 /* Alex.storyboard in Resources */,
 				FD7E975D26F0653C00751A18 /* Nadia.storyboard in Resources */,
 				789DBF3F26EAA4C7005F86D8 /* LaunchScreen.storyboard in Resources */,
 				789DBF3C26EAA4C7005F86D8 /* Assets.xcassets in Resources */,
 				789DBF3A26EAA4C3005F86D8 /* Main.storyboard in Resources */,
 				2C91B6A726EF9255001A46C9 /* Dmitriy.storyboard in Resources */,
+				7873F63726F0D90F005BA974 /* Igor.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,13 +318,16 @@
 				FD7E974D26EDDED700751A18 /* NadiaDetailedInfoViewController.swift in Sources */,
 				FD7E975526EDEA8100751A18 /* NadiaProjectTableViewCell.swift in Sources */,
 				FD7E974926EC90B900751A18 /* NadiaMainResumeViewController.swift in Sources */,
-				789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */,
-				789DBF4A26EAA909005F86D8 /* TabBarController.swift in Sources */,
+				786EE0FB26F4D19500E9688E /* PersonI.swift in Sources */,
 				FD7E974B26ECA5D700751A18 /* PersonN.swift in Sources */,
-				789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */,
 				FD7E975126EDEA0600751A18 /* NadiaEducationTableViewCell.swift in Sources */,
 				FD7E975F26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift in Sources */,
 				2CBC031026EF646F005F2BE6 /* PersonDN.swift in Sources */,
+				789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */,
+				EA84C7CE26F6274F00C94A89 /* AlexPet.swift in Sources */,
+				EA84C7D026F6276100C94A89 /* AlexDataManager.swift in Sources */,
+				EA84C7CC26F3E9DE00C94A89 /* AlexSecondViewController.swift in Sources */,
+				EA84C7C926F3B9B000C94A89 /* AlexProfileRootViewController.swift in Sources */,
 				789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */,
 				FD7E976626F33D1100751A18 /* Extension_UITableView.swift in Sources */,
 				FD7E976126F326FF00751A18 /* NadiaDefaultTableViewCell.swift in Sources */,
@@ -298,6 +340,8 @@
 				2C436F6E26F34BB80046F932 /* ProjectListDNViewController.swift in Sources */,
 				789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */,
 				FD7E975B26EF35A000751A18 /* NadiaDetailedImageViewController.swift in Sources */,
+				EA84C7D226F652F600C94A89 /* AlexThirdViewController.swift in Sources */,
+				EA58194926F7646F00AECFA0 /* AlexUser.swift in Sources */,
 				789DBF4C26EAAAB4005F86D8 /* IgorProfileRootViewController.swift in Sources */,
 				2CBC031226EF6CD1005F2BE6 /* ProfessionDN.swift in Sources */,
 			);
