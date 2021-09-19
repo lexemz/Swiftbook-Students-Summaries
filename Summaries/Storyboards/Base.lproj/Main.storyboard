@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJX-Cu-Ciu">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,37 +8,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Igor Root Profile-->
-        <scene sceneID="l7S-Uk-zc5">
-            <objects>
-                <viewController id="JGT-gj-NFc" userLabel="Igor Root Profile" customClass="IgorProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ADt-b2-JXO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="b7I-wG-vrD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Igor" image="person" catalog="system" selectedImage="person.fill" id="asW-XM-II3"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U2d-Li-hhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1329" y="240"/>
-        </scene>
-        <!--Dmitry Root Profile-->
+        <!--dmitriyRootProfile-->
         <scene sceneID="JYq-0k-FAa">
             <objects>
-                <viewController id="fCK-Yx-iFf" userLabel="Dmitry Root Profile" customClass="DmitryProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="F6Z-m8-bKH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="g4E-eU-iWP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Dmitry" image="person" catalog="system" selectedImage="person.fill" id="ard-J5-Zq6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hOu-fC-P84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Dmitriy" referencedIdentifier="dmitriyRootProfile" id="YRV-Oy-HPP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="SHo-yo-vzw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hk1-Bb-8Pn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-468" y="240"/>
+            <point key="canvasLocation" x="-497" y="-83"/>
         </scene>
         <!--alexRootViewController-->
         <scene sceneID="GpC-5Q-8Wr">
@@ -50,28 +28,22 @@
             </objects>
             <point key="canvasLocation" x="359" y="-66"/>
         </scene>
-        <!--Nadia Root Profile-->
-        <scene sceneID="ymJ-KW-9Nc">
+        <!--igorRootViewController-->
+        <scene sceneID="Rjz-3V-GCx">
             <objects>
-                <viewController id="pUc-Yo-Zoo" userLabel="Nadia Root Profile" customClass="NadiaProfileRootViewController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0oj-I3-xER">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="xtn-O9-H0g"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Nadia" image="person" catalog="system" selectedImage="person.fill" id="dSq-ow-0RP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K7a-fa-HaT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Igor" referencedIdentifier="igorRootViewController" id="x2i-YA-6JM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QSf-bB-dPC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNe-OQ-9wJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2158" y="240"/>
+            <point key="canvasLocation" x="-1328" y="-45"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="epY-e3-mr7">
             <objects>
                 <navigationController id="qJX-Cu-Ciu" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ssR-Ce-fwV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -85,7 +57,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Kh2-Oo-YNL">
             <objects>
-                <tabBarController id="tlD-0b-h9d" customClass="TabBarController" customModule="Summaries" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="tlD-0b-h9d" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Vd5-kb-gai"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J4l-dc-TfS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -93,15 +65,25 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="pUc-Yo-Zoo" kind="relationship" relationship="viewControllers" id="zTM-w0-VOg"/>
-                        <segue destination="JGT-gj-NFc" kind="relationship" relationship="viewControllers" id="vZd-Zg-Oan"/>
-                        <segue destination="fCK-Yx-iFf" kind="relationship" relationship="viewControllers" id="V82-70-EvR"/>
+                        <segue destination="x2i-YA-6JM" kind="relationship" relationship="viewControllers" id="c4R-Nf-jdc"/>
+                        <segue destination="Tqr-t7-74A" kind="relationship" relationship="viewControllers" id="L16-wa-BLv"/>
+                        <segue destination="YRV-Oy-HPP" kind="relationship" relationship="viewControllers" id="2nq-rE-taN"/>
                         <segue destination="yje-0W-bvK" kind="relationship" relationship="viewControllers" id="JFY-pe-qIO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glc-43-M7D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-888" y="-603"/>
+        </scene>
+        <!--NadiaProfileRootViewController-->
+        <scene sceneID="Vav-dm-544">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Nadia" referencedIdentifier="NadiaProfileRootViewController" id="Tqr-t7-74A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ApI-ke-lfh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzc-pB-UKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1985" y="-89"/>
         </scene>
     </scenes>
     <resources>

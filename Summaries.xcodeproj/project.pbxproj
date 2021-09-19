@@ -7,20 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0FEF9526F0B2DC0098EDA9 /* DetailInfoDNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0FEF9426F0B2DC0098EDA9 /* DetailInfoDNViewController.swift */; };
+		2C0FEF9926F0C9A90098EDA9 /* ProjectDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */; };
+		2C436F6E26F34BB80046F932 /* ProjectListDNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C436F6D26F34BB80046F932 /* ProjectListDNViewController.swift */; };
+		2C91B6A726EF9255001A46C9 /* Dmitriy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C91B6A626EF9255001A46C9 /* Dmitriy.storyboard */; };
+		2CBC031026EF646F005F2BE6 /* PersonDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC030F26EF646F005F2BE6 /* PersonDN.swift */; };
+		2CBC031226EF6CD1005F2BE6 /* ProfessionDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */; };
+		786EE0FB26F4D19500E9688E /* PersonI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786EE0FA26F4D19500E9688E /* PersonI.swift */; };
+		7873F63726F0D90F005BA974 /* Igor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7873F63626F0D90F005BA974 /* Igor.storyboard */; };
 		789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF3226EAA4C3005F86D8 /* AppDelegate.swift */; };
 		789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF3426EAA4C3005F86D8 /* SceneDelegate.swift */; };
 		789DBF3A26EAA4C3005F86D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789DBF3826EAA4C3005F86D8 /* Main.storyboard */; };
 		789DBF3C26EAA4C7005F86D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789DBF3B26EAA4C7005F86D8 /* Assets.xcassets */; };
 		789DBF3F26EAA4C7005F86D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789DBF3D26EAA4C7005F86D8 /* LaunchScreen.storyboard */; };
-		789DBF4A26EAA909005F86D8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4926EAA909005F86D8 /* TabBarController.swift */; };
 		789DBF4C26EAAAB4005F86D8 /* IgorProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */; };
 		789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */; };
 		789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */; };
 		789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */; };
 		EA8D44EE26F272C800A3D591 /* Alex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8D44ED26F272C800A3D591 /* Alex.storyboard */; };
+		FD7E974926EC90B900751A18 /* NadiaMainResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E974826EC90B900751A18 /* NadiaMainResumeViewController.swift */; };
+		FD7E974B26ECA5D700751A18 /* PersonN.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E974A26ECA5D700751A18 /* PersonN.swift */; };
+		FD7E974D26EDDED700751A18 /* NadiaDetailedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E974C26EDDED700751A18 /* NadiaDetailedInfoViewController.swift */; };
+		FD7E974F26EDE92300751A18 /* NadiaWorkExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E974E26EDE92300751A18 /* NadiaWorkExperienceCell.swift */; };
+		FD7E975126EDEA0600751A18 /* NadiaEducationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975026EDEA0600751A18 /* NadiaEducationTableViewCell.swift */; };
+		FD7E975326EDEA6800751A18 /* NadiaCertificateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975226EDEA6800751A18 /* NadiaCertificateTableViewCell.swift */; };
+		FD7E975526EDEA8100751A18 /* NadiaProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975426EDEA8100751A18 /* NadiaProjectTableViewCell.swift */; };
+		FD7E975926EF128E00751A18 /* NadiaProjectDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975826EF128E00751A18 /* NadiaProjectDetailedViewController.swift */; };
+		FD7E975B26EF35A000751A18 /* NadiaDetailedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975A26EF35A000751A18 /* NadiaDetailedImageViewController.swift */; };
+		FD7E975D26F0653C00751A18 /* Nadia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7E975C26F0653C00751A18 /* Nadia.storyboard */; };
+		FD7E975F26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E975E26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift */; };
+		FD7E976126F326FF00751A18 /* NadiaDefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E976026F326FF00751A18 /* NadiaDefaultTableViewCell.swift */; };
+		FD7E976426F33C9200751A18 /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E976326F33C9200751A18 /* Extension_UIView.swift */; };
+		FD7E976626F33D1100751A18 /* Extension_UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E976526F33D1100751A18 /* Extension_UITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C0FEF9426F0B2DC0098EDA9 /* DetailInfoDNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoDNViewController.swift; sourceTree = "<group>"; };
+		2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDN.swift; sourceTree = "<group>"; };
+		2C436F6D26F34BB80046F932 /* ProjectListDNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListDNViewController.swift; sourceTree = "<group>"; };
+		2C91B6A626EF9255001A46C9 /* Dmitriy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dmitriy.storyboard; sourceTree = "<group>"; };
+		2CBC030F26EF646F005F2BE6 /* PersonDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDN.swift; sourceTree = "<group>"; };
+		2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionDN.swift; sourceTree = "<group>"; };
+		786EE0FA26F4D19500E9688E /* PersonI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonI.swift; sourceTree = "<group>"; };
+		7873F63626F0D90F005BA974 /* Igor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Igor.storyboard; sourceTree = "<group>"; };
 		789DBF2F26EAA4C3005F86D8 /* Summaries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Summaries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		789DBF3226EAA4C3005F86D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		789DBF3426EAA4C3005F86D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,12 +57,25 @@
 		789DBF3B26EAA4C7005F86D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		789DBF3E26EAA4C7005F86D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		789DBF4026EAA4C7005F86D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		789DBF4926EAA909005F86D8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgorProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmitryProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexProfileRootViewController.swift; sourceTree = "<group>"; };
 		789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaProfileRootViewController.swift; sourceTree = "<group>"; };
 		EA8D44ED26F272C800A3D591 /* Alex.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alex.storyboard; sourceTree = "<group>"; };
+		FD7E974826EC90B900751A18 /* NadiaMainResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaMainResumeViewController.swift; sourceTree = "<group>"; };
+		FD7E974A26ECA5D700751A18 /* PersonN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonN.swift; sourceTree = "<group>"; };
+		FD7E974C26EDDED700751A18 /* NadiaDetailedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaDetailedInfoViewController.swift; sourceTree = "<group>"; };
+		FD7E974E26EDE92300751A18 /* NadiaWorkExperienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaWorkExperienceCell.swift; sourceTree = "<group>"; };
+		FD7E975026EDEA0600751A18 /* NadiaEducationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaEducationTableViewCell.swift; sourceTree = "<group>"; };
+		FD7E975226EDEA6800751A18 /* NadiaCertificateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaCertificateTableViewCell.swift; sourceTree = "<group>"; };
+		FD7E975426EDEA8100751A18 /* NadiaProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaProjectTableViewCell.swift; sourceTree = "<group>"; };
+		FD7E975826EF128E00751A18 /* NadiaProjectDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NadiaProjectDetailedViewController.swift; path = Summaries/Storyboards/NadiaProjectDetailedViewController.swift; sourceTree = SOURCE_ROOT; };
+		FD7E975A26EF35A000751A18 /* NadiaDetailedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaDetailedImageViewController.swift; sourceTree = "<group>"; };
+		FD7E975C26F0653C00751A18 /* Nadia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Nadia.storyboard; sourceTree = "<group>"; };
+		FD7E975E26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaShortFormResumeViewController.swift; sourceTree = "<group>"; };
+		FD7E976026F326FF00751A18 /* NadiaDefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiaDefaultTableViewCell.swift; sourceTree = "<group>"; };
+		FD7E976326F33C9200751A18 /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
+		FD7E976526F33D1100751A18 /* Extension_UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UITableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0D826426F38F2300D1C551 /* DmitriyViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */,
+				2C0FEF9426F0B2DC0098EDA9 /* DetailInfoDNViewController.swift */,
+				2C436F6D26F34BB80046F932 /* ProjectListDNViewController.swift */,
+			);
+			path = DmitriyViewControllers;
+			sourceTree = "<group>";
+		};
 		789DBF2626EAA4C3005F86D8 = {
 			isa = PBXGroup;
 			children = (
@@ -68,8 +120,10 @@
 			children = (
 				789DBF4726EAA600005F86D8 /* App */,
 				789DBF4826EAA721005F86D8 /* ViewControllers */,
+				FD7E976726F33D6500751A18 /* Extensions */,
 				789DBF4626EAA5E8005F86D8 /* Storyboards */,
 				789DBF3B26EAA4C7005F86D8 /* Assets.xcassets */,
+				FD7E976226F33BB300751A18 /* Models */,
 			);
 			path = Summaries;
 			sourceTree = "<group>";
@@ -79,7 +133,10 @@
 			children = (
 				EA8D44ED26F272C800A3D591 /* Alex.storyboard */,
 				789DBF3826EAA4C3005F86D8 /* Main.storyboard */,
+				FD7E975C26F0653C00751A18 /* Nadia.storyboard */,
+				2C91B6A626EF9255001A46C9 /* Dmitriy.storyboard */,
 				789DBF3D26EAA4C7005F86D8 /* LaunchScreen.storyboard */,
+				7873F63626F0D90F005BA974 /* Igor.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -97,13 +154,59 @@
 		789DBF4826EAA721005F86D8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				789DBF4926EAA909005F86D8 /* TabBarController.swift */,
-				789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */,
+				FD7E975626EE018B00751A18 /* NadiaViewControllers */,
 				789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */,
-				789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */,
+				2C0D826426F38F2300D1C551 /* DmitriyViewControllers */,
 				789DBF4F26EAACAD005F86D8 /* AlexProfileRootViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FD7E975626EE018B00751A18 /* NadiaViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				789DBF5126EAAF5D005F86D8 /* NadiaProfileRootViewController.swift */,
+				FD7E974826EC90B900751A18 /* NadiaMainResumeViewController.swift */,
+				FD7E974C26EDDED700751A18 /* NadiaDetailedInfoViewController.swift */,
+				FD7E975826EF128E00751A18 /* NadiaProjectDetailedViewController.swift */,
+				FD7E975E26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift */,
+				FD7E975A26EF35A000751A18 /* NadiaDetailedImageViewController.swift */,
+				FD7E975726EE01B900751A18 /* TableViewCells */,
+			);
+			path = NadiaViewControllers;
+			sourceTree = "<group>";
+		};
+		FD7E975726EE01B900751A18 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				FD7E974E26EDE92300751A18 /* NadiaWorkExperienceCell.swift */,
+				FD7E976026F326FF00751A18 /* NadiaDefaultTableViewCell.swift */,
+				FD7E975026EDEA0600751A18 /* NadiaEducationTableViewCell.swift */,
+				FD7E975226EDEA6800751A18 /* NadiaCertificateTableViewCell.swift */,
+				FD7E975426EDEA8100751A18 /* NadiaProjectTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		FD7E976226F33BB300751A18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CBC030F26EF646F005F2BE6 /* PersonDN.swift */,
+				2CBC031126EF6CD1005F2BE6 /* ProfessionDN.swift */,
+				2C0FEF9826F0C9A90098EDA9 /* ProjectDN.swift */,
+				786EE0FA26F4D19500E9688E /* PersonI.swift */,
+				FD7E974A26ECA5D700751A18 /* PersonN.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD7E976726F33D6500751A18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD7E976326F33C9200751A18 /* Extension_UIView.swift */,
+				FD7E976526F33D1100751A18 /* Extension_UITableView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +267,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA8D44EE26F272C800A3D591 /* Alex.storyboard in Resources */,
+				FD7E975D26F0653C00751A18 /* Nadia.storyboard in Resources */,
 				789DBF3F26EAA4C7005F86D8 /* LaunchScreen.storyboard in Resources */,
 				789DBF3C26EAA4C7005F86D8 /* Assets.xcassets in Resources */,
 				789DBF3A26EAA4C3005F86D8 /* Main.storyboard in Resources */,
+				2C91B6A726EF9255001A46C9 /* Dmitriy.storyboard in Resources */,
+				7873F63726F0D90F005BA974 /* Igor.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,13 +283,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7E975926EF128E00751A18 /* NadiaProjectDetailedViewController.swift in Sources */,
+				FD7E974D26EDDED700751A18 /* NadiaDetailedInfoViewController.swift in Sources */,
+				FD7E975526EDEA8100751A18 /* NadiaProjectTableViewCell.swift in Sources */,
+				FD7E974926EC90B900751A18 /* NadiaMainResumeViewController.swift in Sources */,
 				789DBF5026EAACAD005F86D8 /* AlexProfileRootViewController.swift in Sources */,
-				789DBF4A26EAA909005F86D8 /* TabBarController.swift in Sources */,
+				786EE0FB26F4D19500E9688E /* PersonI.swift in Sources */,
+				FD7E974B26ECA5D700751A18 /* PersonN.swift in Sources */,
 				789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */,
+				FD7E975126EDEA0600751A18 /* NadiaEducationTableViewCell.swift in Sources */,
+				FD7E975F26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift in Sources */,
+				2CBC031026EF646F005F2BE6 /* PersonDN.swift in Sources */,
 				789DBF5226EAAF5D005F86D8 /* NadiaProfileRootViewController.swift in Sources */,
+				FD7E976626F33D1100751A18 /* Extension_UITableView.swift in Sources */,
+				FD7E976126F326FF00751A18 /* NadiaDefaultTableViewCell.swift in Sources */,
+				FD7E975326EDEA6800751A18 /* NadiaCertificateTableViewCell.swift in Sources */,
 				789DBF3526EAA4C3005F86D8 /* SceneDelegate.swift in Sources */,
+				FD7E976426F33C9200751A18 /* Extension_UIView.swift in Sources */,
+				FD7E974F26EDE92300751A18 /* NadiaWorkExperienceCell.swift in Sources */,
+				2C0FEF9526F0B2DC0098EDA9 /* DetailInfoDNViewController.swift in Sources */,
+				2C0FEF9926F0C9A90098EDA9 /* ProjectDN.swift in Sources */,
+				2C436F6E26F34BB80046F932 /* ProjectListDNViewController.swift in Sources */,
 				789DBF4E26EAAB82005F86D8 /* DmitryProfileRootViewController.swift in Sources */,
+				FD7E975B26EF35A000751A18 /* NadiaDetailedImageViewController.swift in Sources */,
 				789DBF4C26EAAAB4005F86D8 /* IgorProfileRootViewController.swift in Sources */,
+				2CBC031226EF6CD1005F2BE6 /* ProfessionDN.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
