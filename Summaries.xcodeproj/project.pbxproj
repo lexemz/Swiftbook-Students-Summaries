@@ -78,8 +78,9 @@
 		789DBF3126EAA4C3005F86D8 /* Summaries */ = {
 			isa = PBXGroup;
 			children = (
-				EA2A5F1226F7C0290059F75A /* DataManagers */,
-				EA2A5F1126F7BFFF0059F75A /* Models */,
+				EA84C7CF26F6276100C94A89 /* AlexDataManager.swift */,
+				EA84C7CD26F6274F00C94A89 /* AlexPet.swift */,
+				EA58194826F7646F00AECFA0 /* AlexUser.swift */,
 				789DBF4726EAA600005F86D8 /* App */,
 				789DBF4826EAA721005F86D8 /* ViewControllers */,
 				789DBF4626EAA5E8005F86D8 /* Storyboards */,
@@ -119,23 +120,6 @@
 				EA84C7CA26F3B9B500C94A89 /* Alex VCs */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		EA2A5F1126F7BFFF0059F75A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				EA84C7CD26F6274F00C94A89 /* AlexPet.swift */,
-				EA58194826F7646F00AECFA0 /* AlexUser.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		EA2A5F1226F7C0290059F75A /* DataManagers */ = {
-			isa = PBXGroup;
-			children = (
-				EA84C7CF26F6276100C94A89 /* AlexDataManager.swift */,
-			);
-			path = DataManagers;
 			sourceTree = "<group>";
 		};
 		EA84C7CA26F3B9B500C94A89 /* Alex VCs */ = {
