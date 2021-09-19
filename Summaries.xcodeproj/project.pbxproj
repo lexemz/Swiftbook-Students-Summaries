@@ -320,7 +320,6 @@
 				FD7E974926EC90B900751A18 /* NadiaMainResumeViewController.swift in Sources */,
 				786EE0FB26F4D19500E9688E /* PersonI.swift in Sources */,
 				FD7E974B26ECA5D700751A18 /* PersonN.swift in Sources */,
-				789DBF3326EAA4C3005F86D8 /* AppDelegate.swift in Sources */,
 				FD7E975126EDEA0600751A18 /* NadiaEducationTableViewCell.swift in Sources */,
 				FD7E975F26F2FEC000751A18 /* NadiaShortFormResumeViewController.swift in Sources */,
 				2CBC031026EF646F005F2BE6 /* PersonDN.swift in Sources */,
