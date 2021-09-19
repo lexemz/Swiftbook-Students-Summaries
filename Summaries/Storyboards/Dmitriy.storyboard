@@ -70,7 +70,7 @@
                             <constraint firstItem="dnr-fI-zNP" firstAttribute="centerX" secondItem="nON-PF-mXc" secondAttribute="centerX" id="iaq-pw-fvV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dmitriy" image="person" catalog="system" id="1jU-G4-czI"/>
+                    <tabBarItem key="tabBarItem" title="Dmitriy" image="person" catalog="system" selectedImage="person.fill" id="1jU-G4-czI"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -225,6 +225,7 @@
     </scenes>
     <resources>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

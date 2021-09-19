@@ -57,7 +57,7 @@
                             <constraint firstItem="xso-vs-eAp" firstAttribute="leading" secondItem="ZUH-Sd-SZR" secondAttribute="leading" id="pbb-ya-CO0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" id="5ev-bB-3ba"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" selectedImage="person.fill" id="5ev-bB-3ba"/>
                     <navigationItem key="navigationItem" id="tFc-xd-DuE"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -204,6 +204,7 @@
         <image name="CatsBackground" width="734" height="732"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
