@@ -79,6 +79,8 @@
 				EA84C7CF26F6276100C94A89 /* AlexDataManager.swift */,
 				EA84C7CD26F6274F00C94A89 /* AlexPet.swift */,
 				EA58194826F7646F00AECFA0 /* AlexUser.swift */,
+				EA84C7CB26F3E9DE00C94A89 /* AlexSecondViewController.swift */,
+				EA84C7D126F652F600C94A89 /* AlexThirdViewController.swift */,
 				789DBF4726EAA600005F86D8 /* App */,
 				789DBF4826EAA721005F86D8 /* ViewControllers */,
 				789DBF4626EAA5E8005F86D8 /* Storyboards */,
@@ -115,18 +117,8 @@
 				789DBF4B26EAAAB4005F86D8 /* IgorProfileRootViewController.swift */,
 				789DBF4D26EAAB82005F86D8 /* DmitryProfileRootViewController.swift */,
 				EA84C7C826F3B9B000C94A89 /* AlexProfileRootViewController.swift */,
-				EA84C7CA26F3B9B500C94A89 /* Alex VCs */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		EA84C7CA26F3B9B500C94A89 /* Alex VCs */ = {
-			isa = PBXGroup;
-			children = (
-				EA84C7CB26F3E9DE00C94A89 /* AlexSecondViewController.swift */,
-				EA84C7D126F652F600C94A89 /* AlexThirdViewController.swift */,
-			);
-			path = "Alex VCs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
