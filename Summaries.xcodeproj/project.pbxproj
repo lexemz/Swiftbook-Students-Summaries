@@ -62,9 +62,8 @@
 		789DBF2626EAA4C3005F86D8 = {
 			isa = PBXGroup;
 			children = (
-				EA58194826F7646F00AECFA0 /* AlexUser.swift */,
-				EA84C7CF26F6276100C94A89 /* AlexDataManager.swift */,
-				EA84C7CD26F6274F00C94A89 /* AlexPet.swift */,
+				EA2A5F1226F7C0290059F75A /* AlexDataManager */,
+				EA2A5F1126F7BFFF0059F75A /* AlexModels */,
 				789DBF3126EAA4C3005F86D8 /* Summaries */,
 				789DBF3026EAA4C3005F86D8 /* Products */,
 			);
@@ -120,6 +119,23 @@
 				EA84C7CA26F3B9B500C94A89 /* Alex`s VCs */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EA2A5F1126F7BFFF0059F75A /* AlexModels */ = {
+			isa = PBXGroup;
+			children = (
+				EA84C7CD26F6274F00C94A89 /* AlexPet.swift */,
+				EA58194826F7646F00AECFA0 /* AlexUser.swift */,
+			);
+			path = AlexModels;
+			sourceTree = "<group>";
+		};
+		EA2A5F1226F7C0290059F75A /* AlexDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EA84C7CF26F6276100C94A89 /* AlexDataManager.swift */,
+			);
+			path = AlexDataManager;
 			sourceTree = "<group>";
 		};
 		EA84C7CA26F3B9B500C94A89 /* Alex`s VCs */ = {
